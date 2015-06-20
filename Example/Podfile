@@ -7,6 +7,5 @@ end
 
 target 'Chain_Tests', :exclusive => true do
   pod "Chain", :path => "../"
-
   
 end

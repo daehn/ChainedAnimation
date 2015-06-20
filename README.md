@@ -9,7 +9,24 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+# Chain
+Chain multiple animations with different delays.
+
+<img src="chain-example-loop.gif" width="250">
+
+Create a chained animation like this:
+
+```swift
+UIView.beginAnimationChain(0.5, options: .CurveEaseInOut) {
+view.frame.origin.y = 170
+}.thenAfter(0.1) {
+otherView.tranform = awesomeTransform
+}.thenAfter(0.15) {
+// More shiny animations
+}.completion { bool in
+// Do something nice on completion. Or don't.   
+}.animate()
+```
 
 ## Installation
 
@@ -22,7 +39,7 @@ pod "Chain"
 
 ## Author
 
-Silvan Dähn, silvandaehn@me.com
+Silvan Dähn, @silvandaehn
 
 ## License
 

@@ -1,0 +1,14 @@
+PODS:
+  - Chain (0.1.0)
+
+DEPENDENCIES:
+  - Chain (from `../`)
+
+EXTERNAL SOURCES:
+  Chain:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Chain: 9854f8953c72f52f6c5372b1179b13d8109a8efd
+
+COCOAPODS: 0.37.1

@@ -1,0 +1,25 @@
+{
+  "name": "Chain",
+  "version": "0.1.0",
+  "summary": "Chain is a small library to chain multiple animations with different delays.",
+  "homepage": "https://github.com/daehn/Chain",
+  "license": "MIT",
+  "authors": {
+    "Silvan Dähn": "silvandaehn@me.com"
+  },
+  "source": {
+    "git": "https://github.com/daehn/Chain.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/silvandaehn",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Chain": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
