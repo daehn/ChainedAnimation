@@ -12,7 +12,7 @@ Chain multiple animations with different delays.
 
 <img src="chain-example-loop.gif" width="250">
 
-Create a chained animation like this:
+You can create a chained animation like this:
 
 ```swift
 UIView.beginAnimationChain(0.5, options: .CurveEaseInOut) {
