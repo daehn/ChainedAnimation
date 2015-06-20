@@ -7,9 +7,7 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-# Chain
+To run the example project, clone the repo, and run `pod install` from the Example directory first.  
 Chain multiple animations with different delays.
 
 <img src="chain-example-loop.gif" width="250">
