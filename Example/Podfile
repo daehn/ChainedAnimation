@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Chain_Example', :exclusive => true do
+  pod "Chain", :path => "../"
+end
+
+target 'Chain_Tests', :exclusive => true do
+  pod "Chain", :path => "../"
+
+  
+end
