@@ -16,13 +16,13 @@ You can create a chained animation like this:
 
 ```swift
 UIView.beginAnimationChain(0.5, options: .CurveEaseInOut) {
-view.frame.origin.y = 170
+  view.frame.origin.y = 170
 }.thenAfter(0.1) {
-otherView.tranform = awesomeTransform
+  otherView.tranform = awesomeTransform
 }.thenAfter(0.15) {
-// More shiny animations
+  // More shiny animations
 }.completion { bool in
-// Do something nice on completion. Or don't.   
+  // Do something nice on completion. Or don't.   
 }.animate()
 ```
 
