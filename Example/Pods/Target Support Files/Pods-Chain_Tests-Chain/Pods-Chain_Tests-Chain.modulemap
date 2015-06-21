@@ -1,6 +1,0 @@
-framework module Chain {
-  umbrella header "Pods-Chain_Tests-Chain-umbrella.h"
-
-  export *
-  module * { export * }
-}

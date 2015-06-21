@@ -1,9 +1,9 @@
-# Chain
+# ChainedAnimation
 
-[![CI Status](http://img.shields.io/travis/daehn/Chain.svg?style=flat)](https://travis-ci.org/daehn/Chain)
-[![Version](https://img.shields.io/cocoapods/v/Chain.svg?style=flat)](http://cocoapods.org/pods/Chain)
-[![License](https://img.shields.io/cocoapods/l/Chain.svg?style=flat)](http://cocoapods.org/pods/Chain)
-[![Platform](https://img.shields.io/cocoapods/p/Chain.svg?style=flat)](http://cocoapods.org/pods/Chain)
+[![CI Status](http://img.shields.io/travis/Silvan Dähn/ChainedAnimation.svg?style=flat)](https://travis-ci.org/Silvan Dähn/ChainedAnimation) 
+![Version](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat) 
+![License](https://img.shields.io/cocoapods/l/ChainedAnimation.svg?style=flat) 
+![Platform](https://img.shields.io/cocoapods/p/ChainedAnimation.svg?style=flat)
 
 ## Usage
 
@@ -28,11 +28,11 @@ UIView.beginAnimationChain(0.5, options: .CurveEaseInOut) {
 
 ## Installation
 
-Chain is available through [CocoaPods](http://cocoapods.org). To install
+ChainedAnimation is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "Chain"
+pod "ChainedAnimation"
 ```
 
 ## Author

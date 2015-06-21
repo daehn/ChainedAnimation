@@ -7,587 +7,587 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F0E7209D5A71D1B69445A48 /* Pods-Chain_Example-Chain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FAECB7A028C775235A1090 /* Pods-Chain_Example-Chain-dummy.m */; };
-		4306C153BD89233174D64F40 /* Pods-Chain_Tests-Chain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D01D848FB893CAC6A71B1C /* Pods-Chain_Tests-Chain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5624780CDD018ADA35D15EF9 /* Pods-Chain_Example-Chain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2A9F36AA71C461A2224D36 /* Pods-Chain_Example-Chain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65A0CD776D8C6E20CDAEC00E /* Chain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04CFFABEC06639B01D56C15D /* Chain.bundle */; };
-		892047DFCC6E8DBE47E969FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A995C01A1AC3FF4682FD85 /* Foundation.framework */; };
-		9243A4B11D63FA209DB20018 /* Pods-Chain_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9041B4BC74EDD777011E71D /* Pods-Chain_Example-dummy.m */; };
-		96D3797372C92E963DE143BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A995C01A1AC3FF4682FD85 /* Foundation.framework */; };
-		972105D2CA55684A08CE45E1 /* Pods-Chain_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B2337C3524B801BED7EE6F /* Pods-Chain_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B98C4F92E6A50D76FB940581 /* Pods-Chain_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D18E75A4AA8FA477E779114 /* Pods-Chain_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9C49A17CE4AA8BB422C9C7F /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E83FDD4E1BDDE37588071 /* Chain.swift */; };
-		CB6168692234CC468144B01C /* Pods-Chain_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DABE2F57E01FE198348C055C /* Pods-Chain_Tests-dummy.m */; };
-		E367D91CDB1488284843AC40 /* Pods-Chain_Tests-Chain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29302720B4D4EAAD02E76526 /* Pods-Chain_Tests-Chain-dummy.m */; };
-		EAF828F21D1A1AF0052DC3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A995C01A1AC3FF4682FD85 /* Foundation.framework */; };
-		EE0EBA0B0657EC50DDC41892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A995C01A1AC3FF4682FD85 /* Foundation.framework */; };
-		F01170940FE99E9A07166B41 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E83FDD4E1BDDE37588071 /* Chain.swift */; };
-		FD3EEE1F10978CCF4075C8DA /* Chain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C11AEB3CECA060510A0257B /* Chain.bundle */; };
+		0DFC8F146C0E185AFCD9C266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A37B1FF524EFF5977139AC /* Foundation.framework */; };
+		1A61A0239B31B00C0EBDA65B /* ChainedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A446D9E6F4879CEAABD8959 /* ChainedAnimation.swift */; };
+		41FDBE1074BDD41FFECB1A60 /* ChainedAnimation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4451F802ADD0504BF55AD6AD /* ChainedAnimation.bundle */; };
+		5ACDE6DB6AAB9B6FEA7B5499 /* Pods-ChainedAnimation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AAD3B012A8043E9C17ABCA /* Pods-ChainedAnimation_Example-dummy.m */; };
+		981081CF6DF3D2F6F8B1F201 /* ChainedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A446D9E6F4879CEAABD8959 /* ChainedAnimation.swift */; };
+		9A1F9F36F9F2D745AE240594 /* Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2827C3828A0D026827BDA45 /* Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m */; };
+		BEDC38C110FDEA572BECE885 /* Pods-ChainedAnimation_Example-ChainedAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D811225F6F076A5A1042FE /* Pods-ChainedAnimation_Example-ChainedAnimation-dummy.m */; };
+		C7E624E4DDAC065DEDF624F9 /* Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E0A5806FC049F1D08790C0 /* Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D988D4FC67B1E67D5F8C18A4 /* Pods-ChainedAnimation_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A8F5659D64D6A1B4E37AC4 /* Pods-ChainedAnimation_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB31EB00D6ACC7B5376FA8C8 /* ChainedAnimation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1BF8E0D04E90E89B5748CA27 /* ChainedAnimation.bundle */; };
+		E142F2F3C44554473DD23781 /* Pods-ChainedAnimation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F90B96F84A0BE998422EAC /* Pods-ChainedAnimation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1D3C6044DD345560F342DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A37B1FF524EFF5977139AC /* Foundation.framework */; };
+		E9A2ADECA99BB7214A533F7F /* Pods-ChainedAnimation_Example-ChainedAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 393B4E6B54FA8299CABF572F /* Pods-ChainedAnimation_Example-ChainedAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6AAC4E85AF3FA6CDB4EE24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A37B1FF524EFF5977139AC /* Foundation.framework */; };
+		EFAC15014ABE155F6C07A38C /* Pods-ChainedAnimation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 129886271388C7122F7AC6A4 /* Pods-ChainedAnimation_Tests-dummy.m */; };
+		F7C16A6C7EA94B29C1F7A433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A37B1FF524EFF5977139AC /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A6E4823D7D47F37033E113D /* PBXContainerItemProxy */ = {
+		02FCDB98454ABB434E0AE4ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3EC328C5921EB33BB293DE6 /* Project object */;
+			containerPortal = 6BEBE01DC8EBD876F106566B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB23C322F2B002386F70576E;
-			remoteInfo = "Pods-Chain_Example-Chain";
+			remoteGlobalIDString = 61CF03AE1224E8551AC2C90C;
+			remoteInfo = "Pods-ChainedAnimation_Example-ChainedAnimation";
 		};
-		77BBB9238F21ADBC4456605B /* PBXContainerItemProxy */ = {
+		1CC52109CD5A446FC23FD668 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3EC328C5921EB33BB293DE6 /* Project object */;
+			containerPortal = 6BEBE01DC8EBD876F106566B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6919972C96E6519E191206C3;
-			remoteInfo = "Pods-Chain_Example-Chain-Chain";
+			remoteGlobalIDString = F0641E02981313D44E7BF473;
+			remoteInfo = "Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation";
 		};
-		AF0A6A2F091D54D44C9DC2B6 /* PBXContainerItemProxy */ = {
+		7F23B22FBAD68CC9939649E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3EC328C5921EB33BB293DE6 /* Project object */;
+			containerPortal = 6BEBE01DC8EBD876F106566B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB3CE6639859FF0DE5727A8F;
-			remoteInfo = "Pods-Chain_Tests-Chain";
+			remoteGlobalIDString = 1FA3B977FE143060DA44C317;
+			remoteInfo = "Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation";
 		};
-		B55095D0BEECF036DBDFC591 /* PBXContainerItemProxy */ = {
+		C553BCC0CD55B12B5B27F8E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3EC328C5921EB33BB293DE6 /* Project object */;
+			containerPortal = 6BEBE01DC8EBD876F106566B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 152A337B3526321158535ED0;
-			remoteInfo = "Pods-Chain_Tests-Chain-Chain";
+			remoteGlobalIDString = 9E49D01E0876292F3A4CC406;
+			remoteInfo = "Pods-ChainedAnimation_Tests-ChainedAnimation";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04CFFABEC06639B01D56C15D /* Chain.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chain.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		07CD4D7BA4BF3C6B8F97E6BC /* Pods-Chain_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chain_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		096E83FDD4E1BDDE37588071 /* Chain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
-		10E3A3CB7DD21F9BEFE7567B /* Pods-Chain_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chain_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		1B31F2836C2D213DBC8E19E4 /* Pods-Chain_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chain_Example-environment.h"; sourceTree = "<group>"; };
-		1E03AE68C44DE578E28D75CC /* Pods-Chain_Tests-Chain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-Chain_Tests-Chain.modulemap"; path = "../Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain.modulemap"; sourceTree = "<group>"; };
-		29302720B4D4EAAD02E76526 /* Pods-Chain_Tests-Chain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Chain_Tests-Chain-dummy.m"; path = "../Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain-dummy.m"; sourceTree = "<group>"; };
-		2E4FEFC8620BAB4C6AADD8BB /* Pods-Chain_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chain_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		30C97818D52CB3C05E0E1ABB /* Pods-Chain_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chain_Tests.modulemap"; sourceTree = "<group>"; };
-		31C72DC67256402326296105 /* Pods-Chain_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chain_Tests-environment.h"; sourceTree = "<group>"; };
-		34AB5E5FC89115905BD94814 /* Pods-Chain_Tests-Chain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chain_Tests-Chain.xcconfig"; path = "../Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain.xcconfig"; sourceTree = "<group>"; };
-		38E5F8B8FA512A07517212AC /* Pods-Chain_Example-Chain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chain_Example-Chain-Private.xcconfig"; sourceTree = "<group>"; };
-		3BF2904C92B446EF6F9ED74E /* Pods-Chain_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chain_Tests-resources.sh"; sourceTree = "<group>"; };
-		3D70181883D28AD9154D5E2D /* Pods-Chain_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chain_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3F3E8B0090351FE1C02AF06A /* Pods-Chain_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chain_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		41D01D848FB893CAC6A71B1C /* Pods-Chain_Tests-Chain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Chain_Tests-Chain-umbrella.h"; path = "../Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain-umbrella.h"; sourceTree = "<group>"; };
-		439849E2B31A2D80F7FB1A43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		469BDB609040CA598E72148E /* Pods-Chain_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chain_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4B8C700A05BE911DA8C7A261 /* Pods_Chain_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chain_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DB93D7B057FDB267149CFA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A4023FD461B966A81E3808A /* Pods-Chain_Example-Chain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Chain_Example-Chain.xcconfig"; sourceTree = "<group>"; };
-		64F53D45C4D7C001719C826F /* Pods-Chain_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chain_Example.modulemap"; sourceTree = "<group>"; };
-		666986BD8D331E85B75CB7E2 /* Pods-Chain_Example-Chain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Chain_Example-Chain.modulemap"; sourceTree = "<group>"; };
-		6B0036825FBC388BB6044C93 /* Chain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CCAF28021F46A6FC0C6D9F3 /* Pods-Chain_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chain_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6D18E75A4AA8FA477E779114 /* Pods-Chain_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chain_Example-umbrella.h"; sourceTree = "<group>"; };
-		6F4BDEC84F85D5B922D8F0F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84FAECB7A028C775235A1090 /* Pods-Chain_Example-Chain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chain_Example-Chain-dummy.m"; sourceTree = "<group>"; };
-		86273D7A8D060C0F93AF8364 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98B2337C3524B801BED7EE6F /* Pods-Chain_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chain_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9C11AEB3CECA060510A0257B /* Chain.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chain.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F28AD4E0707C329FD23F0EF /* Pods-Chain_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chain_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A18154350CCECA4278460858 /* Pods-Chain_Tests-Chain-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chain_Tests-Chain-Private.xcconfig"; path = "../Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain-Private.xcconfig"; sourceTree = "<group>"; };
-		A9041B4BC74EDD777011E71D /* Pods-Chain_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chain_Example-dummy.m"; sourceTree = "<group>"; };
-		A9A995C01A1AC3FF4682FD85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AA2A9F36AA71C461A2224D36 /* Pods-Chain_Example-Chain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chain_Example-Chain-umbrella.h"; sourceTree = "<group>"; };
-		AB8DFE1E44FBBFDCABFD7411 /* Pods-Chain_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Chain_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B486A5E909AF9CF9CF74642D /* Chain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC9BED741FB0ED9A169EF8FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-Chain_Tests-Chain/Info.plist"; sourceTree = "<group>"; };
-		D5E98E78EE1BC28F04853BD2 /* Pods-Chain_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Chain_Example-resources.sh"; sourceTree = "<group>"; };
-		DABE2F57E01FE198348C055C /* Pods-Chain_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Chain_Tests-dummy.m"; sourceTree = "<group>"; };
-		DC149FD82DA64B513BDFBE9E /* Pods_Chain_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chain_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC5E7D4702A24A062E77DBD /* Pods-Chain_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Chain_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F0DC24F9B427D228841F8358 /* Pods-Chain_Tests-Chain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Chain_Tests-Chain-prefix.pch"; path = "../Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain-prefix.pch"; sourceTree = "<group>"; };
-		F8FDF9B3591FF30DC0D02F9D /* Pods-Chain_Example-Chain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Chain_Example-Chain-prefix.pch"; sourceTree = "<group>"; };
+		04D93C965789A24F26D734AA /* Pods-ChainedAnimation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChainedAnimation_Tests-resources.sh"; sourceTree = "<group>"; };
+		06437E2C744BF30368C6E70E /* Pods-ChainedAnimation_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainedAnimation_Tests-environment.h"; sourceTree = "<group>"; };
+		108999CAE2C3FCA5D7EE6704 /* Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig"; sourceTree = "<group>"; };
+		129886271388C7122F7AC6A4 /* Pods-ChainedAnimation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChainedAnimation_Tests-dummy.m"; sourceTree = "<group>"; };
+		13D811225F6F076A5A1042FE /* Pods-ChainedAnimation_Example-ChainedAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChainedAnimation_Example-ChainedAnimation-dummy.m"; sourceTree = "<group>"; };
+		1AC67DA2A11DACCD6AC9C2E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF8E0D04E90E89B5748CA27 /* ChainedAnimation.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainedAnimation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D15FB958ED95D914686DDE9 /* Pods-ChainedAnimation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainedAnimation_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2D8D508398CCCA6A1286F437 /* Pods_ChainedAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChainedAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC352A55D62ABC41238F551 /* ChainedAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChainedAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFDD02063275889FBD6A93A /* Pods-ChainedAnimation_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChainedAnimation_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		300EAEC888F8CFECCF5B530B /* Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig"; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig"; sourceTree = "<group>"; };
+		30B631CF2D55CAE3D4024542 /* Pods-ChainedAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainedAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		334485B1336171C0D0C3F182 /* Pods-ChainedAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainedAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		33A15C1F3EA836EBFBC152D9 /* Pods-ChainedAnimation_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ChainedAnimation_Example.modulemap"; sourceTree = "<group>"; };
+		38B778D71E292C83C1300F69 /* Pods-ChainedAnimation_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChainedAnimation_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		393B4E6B54FA8299CABF572F /* Pods-ChainedAnimation_Example-ChainedAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainedAnimation_Example-ChainedAnimation-umbrella.h"; sourceTree = "<group>"; };
+		4166611FA41A9907646A66B8 /* Pods-ChainedAnimation_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChainedAnimation_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4451F802ADD0504BF55AD6AD /* ChainedAnimation.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainedAnimation.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A446D9E6F4879CEAABD8959 /* ChainedAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChainedAnimation.swift; sourceTree = "<group>"; };
+		50A8F5659D64D6A1B4E37AC4 /* Pods-ChainedAnimation_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainedAnimation_Example-umbrella.h"; sourceTree = "<group>"; };
+		519E01CF9B66D5F2745B5F5F /* Pods-ChainedAnimation_Example-ChainedAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainedAnimation_Example-ChainedAnimation.xcconfig"; sourceTree = "<group>"; };
+		51CE3AEF5353B91BD05BEF48 /* Pods-ChainedAnimation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ChainedAnimation_Tests.modulemap"; sourceTree = "<group>"; };
+		5E8B783BF993670A4B0D4625 /* Pods-ChainedAnimation_Tests-ChainedAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ChainedAnimation_Tests-ChainedAnimation-prefix.pch"; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation-prefix.pch"; sourceTree = "<group>"; };
+		602C75C782858236284CD8F2 /* Pods-ChainedAnimation_Example-ChainedAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainedAnimation_Example-ChainedAnimation-prefix.pch"; sourceTree = "<group>"; };
+		69DF0D01273015CF4107CE10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Info.plist"; sourceTree = "<group>"; };
+		6E59F39345B114692AD89B43 /* Pods-ChainedAnimation_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChainedAnimation_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		72F90B96F84A0BE998422EAC /* Pods-ChainedAnimation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainedAnimation_Tests-umbrella.h"; sourceTree = "<group>"; };
+		73F059EA8CF7F0C973CADDBF /* ChainedAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChainedAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		811F6B7398A91D2DD5EA012C /* Pods-ChainedAnimation_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChainedAnimation_Example-environment.h"; sourceTree = "<group>"; };
+		8ED7C494214DDE08FE9A77ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C90909A61AE57A9FE6CFFD /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		971844EE1411F295A95285B6 /* Pods-ChainedAnimation_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChainedAnimation_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9BFBAB0888432633BC3EE7E3 /* Pods-ChainedAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChainedAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A750E43288427A9CAE9029B2 /* Pods-ChainedAnimation_Example-ChainedAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ChainedAnimation_Example-ChainedAnimation.modulemap"; sourceTree = "<group>"; };
+		A9A37B1FF524EFF5977139AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BFFB53A3D783D116148AA958 /* Pods-ChainedAnimation_Tests-ChainedAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainedAnimation_Tests-ChainedAnimation.xcconfig"; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation.xcconfig"; sourceTree = "<group>"; };
+		C50C517A56E83EFD9D81F4A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1DBD118F4F6E52416326725 /* Pods_ChainedAnimation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChainedAnimation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54C68560FC47CDECB3359BF /* Pods-ChainedAnimation_Tests-ChainedAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-ChainedAnimation_Tests-ChainedAnimation.modulemap"; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation.modulemap"; sourceTree = "<group>"; };
+		E2827C3828A0D026827BDA45 /* Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m"; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m"; sourceTree = "<group>"; };
+		EDF406CB5E497B39604B5264 /* Pods-ChainedAnimation_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChainedAnimation_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F5AAD3B012A8043E9C17ABCA /* Pods-ChainedAnimation_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChainedAnimation_Example-dummy.m"; sourceTree = "<group>"; };
+		F5E0A5806FC049F1D08790C0 /* Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h"; path = "../Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h"; sourceTree = "<group>"; };
+		F63499B802B9974B2DD918ED /* Pods-ChainedAnimation_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChainedAnimation_Example-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		533446349F643097CE3B23B6 /* Frameworks */ = {
+		19EA39FB4DE887A4496697FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C16A6C7EA94B29C1F7A433 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A95232FC1A58F7471F5D46B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		570E2F9FF3C5D50E07DEA082 /* Frameworks */ = {
+		9A0B013E78E18B5365700429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D3C6044DD345560F342DA3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B029BF6D03D28C6FC797A0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DFC8F146C0E185AFCD9C266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A926FD19667923EF597F7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59BD3510A4D28738FB923C1C /* Frameworks */ = {
+		CEB6E460781E6BD567F01360 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96D3797372C92E963DE143BC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CA5DE318E6BF0F9AE07F20D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				892047DFCC6E8DBE47E969FC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACAEA2550354F4D327AA0B7F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE0EBA0B0657EC50DDC41892 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD29204F48A5465BC17E94CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAF828F21D1A1AF0052DC3A7 /* Foundation.framework in Frameworks */,
+				EE6AAC4E85AF3FA6CDB4EE24 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		333DDE2B8A56FEECAD6D51A9 = {
+		059993E67F47F5E6F0F368BD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				86273D7A8D060C0F93AF8364 /* Podfile */,
-				84915980464C116D01D5AA74 /* Development Pods */,
-				6DD1EB81A336B805DBA999F2 /* Frameworks */,
-				C6BE30C0173B7A7F0A75EF84 /* Products */,
-				EA72F57FE2DC84E42467D866 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		34E6D0D4F888A474C2B151CE /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				096E83FDD4E1BDDE37588071 /* Chain.swift */,
+				4A446D9E6F4879CEAABD8959 /* ChainedAnimation.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		6DD1EB81A336B805DBA999F2 /* Frameworks */ = {
+		15C900A36231AB4C6C0EA3B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE88A2C2831EE1C373D93958 /* iOS */,
+				65B344B0D1756AC00392F3AE /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7470DB6637202CEA14BA0435 /* Pods-Chain_Tests */ = {
+		16AB525C49FCE528A9BDD76F /* ChainedAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				6F4BDEC84F85D5B922D8F0F0 /* Info.plist */,
-				30C97818D52CB3C05E0E1ABB /* Pods-Chain_Tests.modulemap */,
-				9F28AD4E0707C329FD23F0EF /* Pods-Chain_Tests-acknowledgements.markdown */,
-				07CD4D7BA4BF3C6B8F97E6BC /* Pods-Chain_Tests-acknowledgements.plist */,
-				DABE2F57E01FE198348C055C /* Pods-Chain_Tests-dummy.m */,
-				31C72DC67256402326296105 /* Pods-Chain_Tests-environment.h */,
-				10E3A3CB7DD21F9BEFE7567B /* Pods-Chain_Tests-frameworks.sh */,
-				3BF2904C92B446EF6F9ED74E /* Pods-Chain_Tests-resources.sh */,
-				98B2337C3524B801BED7EE6F /* Pods-Chain_Tests-umbrella.h */,
-				2E4FEFC8620BAB4C6AADD8BB /* Pods-Chain_Tests.debug.xcconfig */,
-				3F3E8B0090351FE1C02AF06A /* Pods-Chain_Tests.release.xcconfig */,
+				538095B03569FCA474A922BD /* Pod */,
+				9A16F012BB6955ECF99FB0C0 /* Support Files */,
 			);
-			name = "Pods-Chain_Tests";
-			path = "Target Support Files/Pods-Chain_Tests";
+			name = ChainedAnimation;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		84915980464C116D01D5AA74 /* Development Pods */ = {
+		2C2CF427E885E9FE27A1DF7B = {
 			isa = PBXGroup;
 			children = (
-				D40F71434CF99F44F1D4CE51 /* Chain */,
+				91C90909A61AE57A9FE6CFFD /* Podfile */,
+				D46D97E5758477ADC77392AE /* Development Pods */,
+				15C900A36231AB4C6C0EA3B5 /* Frameworks */,
+				E3E63A21CC9E2BC54ED71B36 /* Products */,
+				626C672D6083A85C1DAA79AD /* Targets Support Files */,
 			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		89131274BE55C0F41CD21D00 /* Support Files */ = {
+		538095B03569FCA474A922BD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4DB93D7B057FDB267149CFA5 /* Info.plist */,
-				BC9BED741FB0ED9A169EF8FA /* Info.plist */,
-				666986BD8D331E85B75CB7E2 /* Pods-Chain_Example-Chain.modulemap */,
-				5A4023FD461B966A81E3808A /* Pods-Chain_Example-Chain.xcconfig */,
-				38E5F8B8FA512A07517212AC /* Pods-Chain_Example-Chain-Private.xcconfig */,
-				84FAECB7A028C775235A1090 /* Pods-Chain_Example-Chain-dummy.m */,
-				F8FDF9B3591FF30DC0D02F9D /* Pods-Chain_Example-Chain-prefix.pch */,
-				AA2A9F36AA71C461A2224D36 /* Pods-Chain_Example-Chain-umbrella.h */,
-				1E03AE68C44DE578E28D75CC /* Pods-Chain_Tests-Chain.modulemap */,
-				34AB5E5FC89115905BD94814 /* Pods-Chain_Tests-Chain.xcconfig */,
-				A18154350CCECA4278460858 /* Pods-Chain_Tests-Chain-Private.xcconfig */,
-				29302720B4D4EAAD02E76526 /* Pods-Chain_Tests-Chain-dummy.m */,
-				F0DC24F9B427D228841F8358 /* Pods-Chain_Tests-Chain-prefix.pch */,
-				41D01D848FB893CAC6A71B1C /* Pods-Chain_Tests-Chain-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-Chain_Example-Chain";
-			sourceTree = "<group>";
-		};
-		C0E29899E6DA63314AC7A420 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				34E6D0D4F888A474C2B151CE /* Classes */,
+				059993E67F47F5E6F0F368BD /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		C6BE30C0173B7A7F0A75EF84 /* Products */ = {
+		626C672D6083A85C1DAA79AD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C11AEB3CECA060510A0257B /* Chain.bundle */,
-				04CFFABEC06639B01D56C15D /* Chain.bundle */,
-				B486A5E909AF9CF9CF74642D /* Chain.framework */,
-				6B0036825FBC388BB6044C93 /* Chain.framework */,
-				4B8C700A05BE911DA8C7A261 /* Pods_Chain_Example.framework */,
-				DC149FD82DA64B513BDFBE9E /* Pods_Chain_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CC3E10EA6BA907847E0DE2E8 /* Pods-Chain_Example */ = {
-			isa = PBXGroup;
-			children = (
-				439849E2B31A2D80F7FB1A43 /* Info.plist */,
-				64F53D45C4D7C001719C826F /* Pods-Chain_Example.modulemap */,
-				AB8DFE1E44FBBFDCABFD7411 /* Pods-Chain_Example-acknowledgements.markdown */,
-				DFC5E7D4702A24A062E77DBD /* Pods-Chain_Example-acknowledgements.plist */,
-				A9041B4BC74EDD777011E71D /* Pods-Chain_Example-dummy.m */,
-				1B31F2836C2D213DBC8E19E4 /* Pods-Chain_Example-environment.h */,
-				6CCAF28021F46A6FC0C6D9F3 /* Pods-Chain_Example-frameworks.sh */,
-				D5E98E78EE1BC28F04853BD2 /* Pods-Chain_Example-resources.sh */,
-				6D18E75A4AA8FA477E779114 /* Pods-Chain_Example-umbrella.h */,
-				469BDB609040CA598E72148E /* Pods-Chain_Example.debug.xcconfig */,
-				3D70181883D28AD9154D5E2D /* Pods-Chain_Example.release.xcconfig */,
-			);
-			name = "Pods-Chain_Example";
-			path = "Target Support Files/Pods-Chain_Example";
-			sourceTree = "<group>";
-		};
-		D40F71434CF99F44F1D4CE51 /* Chain */ = {
-			isa = PBXGroup;
-			children = (
-				C0E29899E6DA63314AC7A420 /* Pod */,
-				89131274BE55C0F41CD21D00 /* Support Files */,
-			);
-			name = Chain;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		EA72F57FE2DC84E42467D866 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC3E10EA6BA907847E0DE2E8 /* Pods-Chain_Example */,
-				7470DB6637202CEA14BA0435 /* Pods-Chain_Tests */,
+				CC8FC58808697A2B1B03DFAD /* Pods-ChainedAnimation_Example */,
+				C9A2E866664133B92A301F61 /* Pods-ChainedAnimation_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EE88A2C2831EE1C373D93958 /* iOS */ = {
+		65B344B0D1756AC00392F3AE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A9A995C01A1AC3FF4682FD85 /* Foundation.framework */,
+				A9A37B1FF524EFF5977139AC /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		9A16F012BB6955ECF99FB0C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AC67DA2A11DACCD6AC9C2E1 /* Info.plist */,
+				69DF0D01273015CF4107CE10 /* Info.plist */,
+				A750E43288427A9CAE9029B2 /* Pods-ChainedAnimation_Example-ChainedAnimation.modulemap */,
+				519E01CF9B66D5F2745B5F5F /* Pods-ChainedAnimation_Example-ChainedAnimation.xcconfig */,
+				108999CAE2C3FCA5D7EE6704 /* Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig */,
+				13D811225F6F076A5A1042FE /* Pods-ChainedAnimation_Example-ChainedAnimation-dummy.m */,
+				602C75C782858236284CD8F2 /* Pods-ChainedAnimation_Example-ChainedAnimation-prefix.pch */,
+				393B4E6B54FA8299CABF572F /* Pods-ChainedAnimation_Example-ChainedAnimation-umbrella.h */,
+				D54C68560FC47CDECB3359BF /* Pods-ChainedAnimation_Tests-ChainedAnimation.modulemap */,
+				BFFB53A3D783D116148AA958 /* Pods-ChainedAnimation_Tests-ChainedAnimation.xcconfig */,
+				300EAEC888F8CFECCF5B530B /* Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig */,
+				E2827C3828A0D026827BDA45 /* Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m */,
+				5E8B783BF993670A4B0D4625 /* Pods-ChainedAnimation_Tests-ChainedAnimation-prefix.pch */,
+				F5E0A5806FC049F1D08790C0 /* Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation";
+			sourceTree = "<group>";
+		};
+		C9A2E866664133B92A301F61 /* Pods-ChainedAnimation_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7C494214DDE08FE9A77ED /* Info.plist */,
+				51CE3AEF5353B91BD05BEF48 /* Pods-ChainedAnimation_Tests.modulemap */,
+				2EFDD02063275889FBD6A93A /* Pods-ChainedAnimation_Tests-acknowledgements.markdown */,
+				4166611FA41A9907646A66B8 /* Pods-ChainedAnimation_Tests-acknowledgements.plist */,
+				129886271388C7122F7AC6A4 /* Pods-ChainedAnimation_Tests-dummy.m */,
+				06437E2C744BF30368C6E70E /* Pods-ChainedAnimation_Tests-environment.h */,
+				6E59F39345B114692AD89B43 /* Pods-ChainedAnimation_Tests-frameworks.sh */,
+				04D93C965789A24F26D734AA /* Pods-ChainedAnimation_Tests-resources.sh */,
+				72F90B96F84A0BE998422EAC /* Pods-ChainedAnimation_Tests-umbrella.h */,
+				334485B1336171C0D0C3F182 /* Pods-ChainedAnimation_Tests.debug.xcconfig */,
+				30B631CF2D55CAE3D4024542 /* Pods-ChainedAnimation_Tests.release.xcconfig */,
+			);
+			name = "Pods-ChainedAnimation_Tests";
+			path = "Target Support Files/Pods-ChainedAnimation_Tests";
+			sourceTree = "<group>";
+		};
+		CC8FC58808697A2B1B03DFAD /* Pods-ChainedAnimation_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C50C517A56E83EFD9D81F4A0 /* Info.plist */,
+				33A15C1F3EA836EBFBC152D9 /* Pods-ChainedAnimation_Example.modulemap */,
+				38B778D71E292C83C1300F69 /* Pods-ChainedAnimation_Example-acknowledgements.markdown */,
+				971844EE1411F295A95285B6 /* Pods-ChainedAnimation_Example-acknowledgements.plist */,
+				F5AAD3B012A8043E9C17ABCA /* Pods-ChainedAnimation_Example-dummy.m */,
+				811F6B7398A91D2DD5EA012C /* Pods-ChainedAnimation_Example-environment.h */,
+				EDF406CB5E497B39604B5264 /* Pods-ChainedAnimation_Example-frameworks.sh */,
+				F63499B802B9974B2DD918ED /* Pods-ChainedAnimation_Example-resources.sh */,
+				50A8F5659D64D6A1B4E37AC4 /* Pods-ChainedAnimation_Example-umbrella.h */,
+				9BFBAB0888432633BC3EE7E3 /* Pods-ChainedAnimation_Example.debug.xcconfig */,
+				1D15FB958ED95D914686DDE9 /* Pods-ChainedAnimation_Example.release.xcconfig */,
+			);
+			name = "Pods-ChainedAnimation_Example";
+			path = "Target Support Files/Pods-ChainedAnimation_Example";
+			sourceTree = "<group>";
+		};
+		D46D97E5758477ADC77392AE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16AB525C49FCE528A9BDD76F /* ChainedAnimation */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E3E63A21CC9E2BC54ED71B36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BF8E0D04E90E89B5748CA27 /* ChainedAnimation.bundle */,
+				4451F802ADD0504BF55AD6AD /* ChainedAnimation.bundle */,
+				73F059EA8CF7F0C973CADDBF /* ChainedAnimation.framework */,
+				2DC352A55D62ABC41238F551 /* ChainedAnimation.framework */,
+				2D8D508398CCCA6A1286F437 /* Pods_ChainedAnimation_Example.framework */,
+				D1DBD118F4F6E52416326725 /* Pods_ChainedAnimation_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2316A69BD9505EBE653396CC /* Headers */ = {
+		169A941808A9A6262DF6B78C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				972105D2CA55684A08CE45E1 /* Pods-Chain_Tests-umbrella.h in Headers */,
+				C7E624E4DDAC065DEDF624F9 /* Pods-ChainedAnimation_Tests-ChainedAnimation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25E6B90B006B1D660CC20479 /* Headers */ = {
+		4AE322E35235548099053136 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B98C4F92E6A50D76FB940581 /* Pods-Chain_Example-umbrella.h in Headers */,
+				E9A2ADECA99BB7214A533F7F /* Pods-ChainedAnimation_Example-ChainedAnimation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AE0701ABCBF34F174EC38BC /* Headers */ = {
+		F41F0A5A3BEB71DFBF039A62 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5624780CDD018ADA35D15EF9 /* Pods-Chain_Example-Chain-umbrella.h in Headers */,
+				E142F2F3C44554473DD23781 /* Pods-ChainedAnimation_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB2D33FD3CD866E223F6482F /* Headers */ = {
+		F58135652EFCB5D272E2B3CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4306C153BD89233174D64F40 /* Pods-Chain_Tests-Chain-umbrella.h in Headers */,
+				D988D4FC67B1E67D5F8C18A4 /* Pods-ChainedAnimation_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		152A337B3526321158535ED0 /* Pods-Chain_Tests-Chain-Chain */ = {
+		1FA3B977FE143060DA44C317 /* Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C465311DB54F097E1995AE9 /* Build configuration list for PBXNativeTarget "Pods-Chain_Tests-Chain-Chain" */;
+			buildConfigurationList = 8773CDCCB834BFB32E12CC01 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation" */;
 			buildPhases = (
-				D1EE9556EB120242D356C4D7 /* Sources */,
-				570E2F9FF3C5D50E07DEA082 /* Frameworks */,
-				E3041A73B756E4F32C7CB4BB /* Resources */,
+				2866D4DFC57715898EBCF330 /* Sources */,
+				B9A926FD19667923EF597F7F /* Frameworks */,
+				C48406471BBE6585F9F7DCB3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Chain_Tests-Chain-Chain";
-			productName = "Pods-Chain_Tests-Chain-Chain";
-			productReference = 9C11AEB3CECA060510A0257B /* Chain.bundle */;
+			name = "Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation";
+			productName = "Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation";
+			productReference = 4451F802ADD0504BF55AD6AD /* ChainedAnimation.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		6919972C96E6519E191206C3 /* Pods-Chain_Example-Chain-Chain */ = {
+		2C0603994A236824B117D175 /* Pods-ChainedAnimation_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0136366E04D79131D433146 /* Build configuration list for PBXNativeTarget "Pods-Chain_Example-Chain-Chain" */;
+			buildConfigurationList = D33B523E9C0D92BCF8FA6897 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Example" */;
 			buildPhases = (
-				EAD88FF1B43AD8CA77BCA469 /* Sources */,
-				533446349F643097CE3B23B6 /* Frameworks */,
-				1E1A49C6B211E82BE670D134 /* Resources */,
+				BE3D5DE3A43C7B53EF245740 /* Sources */,
+				CEB6E460781E6BD567F01360 /* Frameworks */,
+				F58135652EFCB5D272E2B3CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D954E8C794815F96FB4B401F /* PBXTargetDependency */,
+			);
+			name = "Pods-ChainedAnimation_Example";
+			productName = "Pods-ChainedAnimation_Example";
+			productReference = 2D8D508398CCCA6A1286F437 /* Pods_ChainedAnimation_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61CF03AE1224E8551AC2C90C /* Pods-ChainedAnimation_Example-ChainedAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BB6D5727E756376C669EE2 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Example-ChainedAnimation" */;
+			buildPhases = (
+				56B8EA7AE2E3C8305246B874 /* Sources */,
+				B029BF6D03D28C6FC797A0CE /* Frameworks */,
+				D4E1A4D60AB09C9E26493337 /* Resources */,
+				4AE322E35235548099053136 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA12B37380C1201BC72D0A6B /* PBXTargetDependency */,
+			);
+			name = "Pods-ChainedAnimation_Example-ChainedAnimation";
+			productName = "Pods-ChainedAnimation_Example-ChainedAnimation";
+			productReference = 73F059EA8CF7F0C973CADDBF /* ChainedAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E49D01E0876292F3A4CC406 /* Pods-ChainedAnimation_Tests-ChainedAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA055F5F701BF1F05C7C3BB1 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Tests-ChainedAnimation" */;
+			buildPhases = (
+				91E4CE1E0323EED294A4C753 /* Sources */,
+				9A0B013E78E18B5365700429 /* Frameworks */,
+				4D9B4C62F0ACF55CE66DAB84 /* Resources */,
+				169A941808A9A6262DF6B78C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92431BE71C525E8D21FD42EC /* PBXTargetDependency */,
+			);
+			name = "Pods-ChainedAnimation_Tests-ChainedAnimation";
+			productName = "Pods-ChainedAnimation_Tests-ChainedAnimation";
+			productReference = 2DC352A55D62ABC41238F551 /* ChainedAnimation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9985A86B12EAD2CD8C025FB /* Pods-ChainedAnimation_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D21733BE52DE03205FE7717 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Tests" */;
+			buildPhases = (
+				7C23324B4C2C89EFC1A45613 /* Sources */,
+				19EA39FB4DE887A4496697FF /* Frameworks */,
+				F41F0A5A3BEB71DFBF039A62 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4CCA5493FDDC8A1DAB5CC2B /* PBXTargetDependency */,
+			);
+			name = "Pods-ChainedAnimation_Tests";
+			productName = "Pods-ChainedAnimation_Tests";
+			productReference = D1DBD118F4F6E52416326725 /* Pods_ChainedAnimation_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0641E02981313D44E7BF473 /* Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F292F1DBF15A461446D764 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation" */;
+			buildPhases = (
+				4D5A3F102ADF9014410D5AFB /* Sources */,
+				4A95232FC1A58F7471F5D46B /* Frameworks */,
+				245AA39D93BE197B22436CAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Chain_Example-Chain-Chain";
-			productName = "Pods-Chain_Example-Chain-Chain";
-			productReference = 04CFFABEC06639B01D56C15D /* Chain.bundle */;
+			name = "Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation";
+			productName = "Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation";
+			productReference = 1BF8E0D04E90E89B5748CA27 /* ChainedAnimation.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		BAE649777E81A7EFFF4A8345 /* Pods-Chain_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1B54711BC41F66582D9B7FBC /* Build configuration list for PBXNativeTarget "Pods-Chain_Example" */;
-			buildPhases = (
-				F5BCA1993E584C3D9394A22B /* Sources */,
-				ACAEA2550354F4D327AA0B7F /* Frameworks */,
-				25E6B90B006B1D660CC20479 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8F6E6D2D5283A4FAD25FC60 /* PBXTargetDependency */,
-			);
-			name = "Pods-Chain_Example";
-			productName = "Pods-Chain_Example";
-			productReference = 4B8C700A05BE911DA8C7A261 /* Pods_Chain_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CB3CE6639859FF0DE5727A8F /* Pods-Chain_Tests-Chain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5A45839BBC4F84C36698A055 /* Build configuration list for PBXNativeTarget "Pods-Chain_Tests-Chain" */;
-			buildPhases = (
-				99FCC6DE1C1F3AE47E858F28 /* Sources */,
-				59BD3510A4D28738FB923C1C /* Frameworks */,
-				51A016062EBE3F0B4B2F1BA2 /* Resources */,
-				DB2D33FD3CD866E223F6482F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				01F9BFA9093C6121CCC740B0 /* PBXTargetDependency */,
-			);
-			name = "Pods-Chain_Tests-Chain";
-			productName = "Pods-Chain_Tests-Chain";
-			productReference = 6B0036825FBC388BB6044C93 /* Chain.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DB23C322F2B002386F70576E /* Pods-Chain_Example-Chain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB858B5E1F20DBD8D3FBA5E7 /* Build configuration list for PBXNativeTarget "Pods-Chain_Example-Chain" */;
-			buildPhases = (
-				136013FA20F4EF4741B813D5 /* Sources */,
-				9CA5DE318E6BF0F9AE07F20D /* Frameworks */,
-				19229D3F6015DFC3E8420B3D /* Resources */,
-				5AE0701ABCBF34F174EC38BC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF02F35DF3CE7FE8CCD59C8C /* PBXTargetDependency */,
-			);
-			name = "Pods-Chain_Example-Chain";
-			productName = "Pods-Chain_Example-Chain";
-			productReference = B486A5E909AF9CF9CF74642D /* Chain.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FD22E1D4F25B181370EE338B /* Pods-Chain_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF83BF677C635650737A5565 /* Build configuration list for PBXNativeTarget "Pods-Chain_Tests" */;
-			buildPhases = (
-				758A67F1065ADD733EAA5AED /* Sources */,
-				FD29204F48A5465BC17E94CA /* Frameworks */,
-				2316A69BD9505EBE653396CC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7C26569098A41EE79A8260D1 /* PBXTargetDependency */,
-			);
-			name = "Pods-Chain_Tests";
-			productName = "Pods-Chain_Tests";
-			productReference = DC149FD82DA64B513BDFBE9E /* Pods_Chain_Tests.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C3EC328C5921EB33BB293DE6 /* Project object */ = {
+		6BEBE01DC8EBD876F106566B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 0677E0934FC97021A57EB10D /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 88C931228EDDD30E5842E119 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 333DDE2B8A56FEECAD6D51A9;
-			productRefGroup = C6BE30C0173B7A7F0A75EF84 /* Products */;
+			mainGroup = 2C2CF427E885E9FE27A1DF7B;
+			productRefGroup = E3E63A21CC9E2BC54ED71B36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAE649777E81A7EFFF4A8345 /* Pods-Chain_Example */,
-				DB23C322F2B002386F70576E /* Pods-Chain_Example-Chain */,
-				6919972C96E6519E191206C3 /* Pods-Chain_Example-Chain-Chain */,
-				FD22E1D4F25B181370EE338B /* Pods-Chain_Tests */,
-				CB3CE6639859FF0DE5727A8F /* Pods-Chain_Tests-Chain */,
-				152A337B3526321158535ED0 /* Pods-Chain_Tests-Chain-Chain */,
+				2C0603994A236824B117D175 /* Pods-ChainedAnimation_Example */,
+				61CF03AE1224E8551AC2C90C /* Pods-ChainedAnimation_Example-ChainedAnimation */,
+				1FA3B977FE143060DA44C317 /* Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation */,
+				D9985A86B12EAD2CD8C025FB /* Pods-ChainedAnimation_Tests */,
+				9E49D01E0876292F3A4CC406 /* Pods-ChainedAnimation_Tests-ChainedAnimation */,
+				F0641E02981313D44E7BF473 /* Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19229D3F6015DFC3E8420B3D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65A0CD776D8C6E20CDAEC00E /* Chain.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E1A49C6B211E82BE670D134 /* Resources */ = {
+		245AA39D93BE197B22436CAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51A016062EBE3F0B4B2F1BA2 /* Resources */ = {
+		4D9B4C62F0ACF55CE66DAB84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD3EEE1F10978CCF4075C8DA /* Chain.bundle in Resources */,
+				DB31EB00D6ACC7B5376FA8C8 /* ChainedAnimation.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3041A73B756E4F32C7CB4BB /* Resources */ = {
+		C48406471BBE6585F9F7DCB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E1A4D60AB09C9E26493337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41FDBE1074BDD41FFECB1A60 /* ChainedAnimation.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		136013FA20F4EF4741B813D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9C49A17CE4AA8BB422C9C7F /* Chain.swift in Sources */,
-				1F0E7209D5A71D1B69445A48 /* Pods-Chain_Example-Chain-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		758A67F1065ADD733EAA5AED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB6168692234CC468144B01C /* Pods-Chain_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99FCC6DE1C1F3AE47E858F28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F01170940FE99E9A07166B41 /* Chain.swift in Sources */,
-				E367D91CDB1488284843AC40 /* Pods-Chain_Tests-Chain-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1EE9556EB120242D356C4D7 /* Sources */ = {
+		2866D4DFC57715898EBCF330 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAD88FF1B43AD8CA77BCA469 /* Sources */ = {
+		4D5A3F102ADF9014410D5AFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5BCA1993E584C3D9394A22B /* Sources */ = {
+		56B8EA7AE2E3C8305246B874 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9243A4B11D63FA209DB20018 /* Pods-Chain_Example-dummy.m in Sources */,
+				981081CF6DF3D2F6F8B1F201 /* ChainedAnimation.swift in Sources */,
+				BEDC38C110FDEA572BECE885 /* Pods-ChainedAnimation_Example-ChainedAnimation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C23324B4C2C89EFC1A45613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAC15014ABE155F6C07A38C /* Pods-ChainedAnimation_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E4CE1E0323EED294A4C753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A61A0239B31B00C0EBDA65B /* ChainedAnimation.swift in Sources */,
+				9A1F9F36F9F2D745AE240594 /* Pods-ChainedAnimation_Tests-ChainedAnimation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3D5DE3A43C7B53EF245740 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACDE6DB6AAB9B6FEA7B5499 /* Pods-ChainedAnimation_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01F9BFA9093C6121CCC740B0 /* PBXTargetDependency */ = {
+		92431BE71C525E8D21FD42EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Chain_Tests-Chain-Chain";
-			target = 152A337B3526321158535ED0 /* Pods-Chain_Tests-Chain-Chain */;
-			targetProxy = B55095D0BEECF036DBDFC591 /* PBXContainerItemProxy */;
+			name = "Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation";
+			target = F0641E02981313D44E7BF473 /* Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation */;
+			targetProxy = 1CC52109CD5A446FC23FD668 /* PBXContainerItemProxy */;
 		};
-		7C26569098A41EE79A8260D1 /* PBXTargetDependency */ = {
+		D954E8C794815F96FB4B401F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Chain_Tests-Chain";
-			target = CB3CE6639859FF0DE5727A8F /* Pods-Chain_Tests-Chain */;
-			targetProxy = AF0A6A2F091D54D44C9DC2B6 /* PBXContainerItemProxy */;
+			name = "Pods-ChainedAnimation_Example-ChainedAnimation";
+			target = 61CF03AE1224E8551AC2C90C /* Pods-ChainedAnimation_Example-ChainedAnimation */;
+			targetProxy = 02FCDB98454ABB434E0AE4ED /* PBXContainerItemProxy */;
 		};
-		A8F6E6D2D5283A4FAD25FC60 /* PBXTargetDependency */ = {
+		DA12B37380C1201BC72D0A6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Chain_Example-Chain";
-			target = DB23C322F2B002386F70576E /* Pods-Chain_Example-Chain */;
-			targetProxy = 3A6E4823D7D47F37033E113D /* PBXContainerItemProxy */;
+			name = "Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation";
+			target = 1FA3B977FE143060DA44C317 /* Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation */;
+			targetProxy = 7F23B22FBAD68CC9939649E5 /* PBXContainerItemProxy */;
 		};
-		AF02F35DF3CE7FE8CCD59C8C /* PBXTargetDependency */ = {
+		E4CCA5493FDDC8A1DAB5CC2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Chain_Example-Chain-Chain";
-			target = 6919972C96E6519E191206C3 /* Pods-Chain_Example-Chain-Chain */;
-			targetProxy = 77BBB9238F21ADBC4456605B /* PBXContainerItemProxy */;
+			name = "Pods-ChainedAnimation_Tests-ChainedAnimation";
+			target = 9E49D01E0876292F3A4CC406 /* Pods-ChainedAnimation_Tests-ChainedAnimation */;
+			targetProxy = C553BCC0CD55B12B5B27F8E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0224E06A9DAACB76688B30A2 /* Debug */ = {
+		1525389486E6F6118E6E4EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A18154350CCECA4278460858 /* Pods-Chain_Tests-Chain-Private.xcconfig */;
+			baseConfigurationReference = 30B631CF2D55CAE3D4024542 /* Pods-ChainedAnimation_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -596,14 +596,106 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Tests-Chain/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Tests/Pods-ChainedAnimation_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ChainedAnimation_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CC1A8D0FBE0E7F8A587BE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E70F833728078F1E80CF928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108999CAE2C3FCA5D7EE6704 /* Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation/Pods-ChainedAnimation_Example-ChainedAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation/Pods-ChainedAnimation_Example-ChainedAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ChainedAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53A13787884CC17FCF4E229E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFBAB0888432633BC3EE7E3 /* Pods-ChainedAnimation_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Example/Pods-ChainedAnimation_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Chain;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ChainedAnimation_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -613,7 +705,118 @@
 			};
 			name = Debug;
 		};
-		0C33C2B9B2EE170050D2ED3F /* Debug */ = {
+		5BB953FC8D850D685803302C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D15FB958ED95D914686DDE9 /* Pods-ChainedAnimation_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Example/Pods-ChainedAnimation_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ChainedAnimation_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C7B20E881B02DA2FC540427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108999CAE2C3FCA5D7EE6704 /* Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ChainedAnimation_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ChainedAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		883E926C6796884DD40F983B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300EAEC888F8CFECCF5B530B /* Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ChainedAnimation_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ChainedAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A9B77D50852387F64CBE0A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 334485B1336171C0D0C3F182 /* Pods-ChainedAnimation_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Tests/Pods-ChainedAnimation_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ChainedAnimation_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADADEFE71F36C823FDAFAB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108999CAE2C3FCA5D7EE6704 /* Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ChainedAnimation_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ChainedAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C71E6551DB2AC27BF3FB05BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300EAEC888F8CFECCF5B530B /* Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ChainedAnimation_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ChainedAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CDCFD37205F286590743A81E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -652,9 +855,9 @@
 			};
 			name = Debug;
 		};
-		1073AE814FF760C465BF59B2 /* Release */ = {
+		D9BA68AEAD8127C63B910483 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D70181883D28AD9154D5E2D /* Pods-Chain_Example.release.xcconfig */;
+			baseConfigurationReference = 300EAEC888F8CFECCF5B530B /* Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -663,16 +866,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Tests-ChainedAnimation/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Example/Pods-Chain_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Chain_Example;
+				PRODUCT_NAME = ChainedAnimation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,35 +882,9 @@
 			};
 			name = Release;
 		};
-		39B5AEF42F725829C0677B64 /* Release */ = {
+		DFBEEE95D2F948DD58A9F0FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A18154350CCECA4278460858 /* Pods-Chain_Tests-Chain-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Chain_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Chain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		4D19F805B6FA30EA3299740F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38E5F8B8FA512A07517212AC /* Pods-Chain_Example-Chain-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Chain_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Chain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		4EACE0BA29ECDDFFC76734E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 469BDB609040CA598E72148E /* Pods-Chain_Example.debug.xcconfig */;
+			baseConfigurationReference = 108999CAE2C3FCA5D7EE6704 /* Pods-ChainedAnimation_Example-ChainedAnimation-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -718,16 +893,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation/Pods-ChainedAnimation_Example-ChainedAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Example/Pods-Chain_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Example-ChainedAnimation/Pods-ChainedAnimation_Example-ChainedAnimation.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Chain_Example;
+				PRODUCT_NAME = ChainedAnimation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -737,9 +910,9 @@
 			};
 			name = Debug;
 		};
-		6ED67F50AFF425A69E61B3B2 /* Release */ = {
+		F9872E40227B5606814BF6BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F3E8B0090351FE1C02AF06A /* Pods-Chain_Tests.release.xcconfig */;
+			baseConfigurationReference = 300EAEC888F8CFECCF5B530B /* Pods-ChainedAnimation_Tests-ChainedAnimation-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -748,43 +921,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChainedAnimation_Tests-ChainedAnimation/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Tests/Pods-Chain_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Chain_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		93BA48AF40803E0BB8AD6145 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38E5F8B8FA512A07517212AC /* Pods-Chain_Example-Chain-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chain_Example-Chain/Pods-Chain_Example-Chain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Example-Chain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Example-Chain/Pods-Chain_Example-Chain.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ChainedAnimation_Tests-ChainedAnimation/Pods-ChainedAnimation_Tests-ChainedAnimation.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Chain;
+				PRODUCT_NAME = ChainedAnimation;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -793,218 +937,74 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		A787F6E7486756A6E4153EC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38E5F8B8FA512A07517212AC /* Pods-Chain_Example-Chain-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Chain_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Chain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BD59CC2F2FDBB19038E5FCC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A18154350CCECA4278460858 /* Pods-Chain_Tests-Chain-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Tests-Chain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Tests-Chain/Pods-Chain_Tests-Chain.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Chain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D9F43B11B66DB9446BCD1FB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A18154350CCECA4278460858 /* Pods-Chain_Tests-Chain-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Chain_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Chain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		ED16F1C19CDE10F84DD5447B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E4FEFC8620BAB4C6AADD8BB /* Pods-Chain_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Tests/Pods-Chain_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Chain_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EEA62B75DCD04AE99E3E480E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EFE05F92E75EB87BF1319228 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38E5F8B8FA512A07517212AC /* Pods-Chain_Example-Chain-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Chain_Example-Chain/Pods-Chain_Example-Chain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Chain_Example-Chain/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Chain_Example-Chain/Pods-Chain_Example-Chain.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Chain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0677E0934FC97021A57EB10D /* Build configuration list for PBXProject "Pods" */ = {
+		30F292F1DBF15A461446D764 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Tests-ChainedAnimation-ChainedAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C33C2B9B2EE170050D2ED3F /* Debug */,
-				EEA62B75DCD04AE99E3E480E /* Release */,
+				C71E6551DB2AC27BF3FB05BA /* Debug */,
+				883E926C6796884DD40F983B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B54711BC41F66582D9B7FBC /* Build configuration list for PBXNativeTarget "Pods-Chain_Example" */ = {
+		4D21733BE52DE03205FE7717 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EACE0BA29ECDDFFC76734E9 /* Debug */,
-				1073AE814FF760C465BF59B2 /* Release */,
+				A9B77D50852387F64CBE0A48 /* Debug */,
+				1525389486E6F6118E6E4EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A45839BBC4F84C36698A055 /* Build configuration list for PBXNativeTarget "Pods-Chain_Tests-Chain" */ = {
+		55BB6D5727E756376C669EE2 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Example-ChainedAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0224E06A9DAACB76688B30A2 /* Debug */,
-				BD59CC2F2FDBB19038E5FCC0 /* Release */,
+				DFBEEE95D2F948DD58A9F0FD /* Debug */,
+				4E70F833728078F1E80CF928 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C465311DB54F097E1995AE9 /* Build configuration list for PBXNativeTarget "Pods-Chain_Tests-Chain-Chain" */ = {
+		8773CDCCB834BFB32E12CC01 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Example-ChainedAnimation-ChainedAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9F43B11B66DB9446BCD1FB0 /* Debug */,
-				39B5AEF42F725829C0677B64 /* Release */,
+				ADADEFE71F36C823FDAFAB4A /* Debug */,
+				7C7B20E881B02DA2FC540427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0136366E04D79131D433146 /* Build configuration list for PBXNativeTarget "Pods-Chain_Example-Chain-Chain" */ = {
+		88C931228EDDD30E5842E119 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A787F6E7486756A6E4153EC9 /* Debug */,
-				4D19F805B6FA30EA3299740F /* Release */,
+				CDCFD37205F286590743A81E /* Debug */,
+				3CC1A8D0FBE0E7F8A587BE2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF83BF677C635650737A5565 /* Build configuration list for PBXNativeTarget "Pods-Chain_Tests" */ = {
+		CA055F5F701BF1F05C7C3BB1 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Tests-ChainedAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED16F1C19CDE10F84DD5447B /* Debug */,
-				6ED67F50AFF425A69E61B3B2 /* Release */,
+				F9872E40227B5606814BF6BD /* Debug */,
+				D9BA68AEAD8127C63B910483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB858B5E1F20DBD8D3FBA5E7 /* Build configuration list for PBXNativeTarget "Pods-Chain_Example-Chain" */ = {
+		D33B523E9C0D92BCF8FA6897 /* Build configuration list for PBXNativeTarget "Pods-ChainedAnimation_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93BA48AF40803E0BB8AD6145 /* Debug */,
-				EFE05F92E75EB87BF1319228 /* Release */,
+				53A13787884CC17FCF4E229E /* Debug */,
+				5BB953FC8D850D685803302C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C3EC328C5921EB33BB293DE6 /* Project object */;
+	rootObject = 6BEBE01DC8EBD876F106566B /* Project object */;
 }
