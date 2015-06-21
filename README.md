@@ -1,6 +1,6 @@
 # ChainedAnimation
 
-[![CI Status](http://img.shields.io/travis/Silvan Dähn/ChainedAnimation.svg?style=flat)](https://travis-ci.org/Silvan Dähn/ChainedAnimation) 
+[![CI Status](http://img.shields.io/travis/daehn/Chain.svg?style=flat)](https://travis-ci.org/Silvan Dähn/ChainedAnimation) 
 ![Version](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat) 
 ![License](https://img.shields.io/cocoapods/l/ChainedAnimation.svg?style=flat) 
 ![Platform](https://img.shields.io/cocoapods/p/ChainedAnimation.svg?style=flat)
