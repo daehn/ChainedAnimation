@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ChainedAnimation_Example', :exclusive => true do
+  pod "ChainedAnimation", :path => "../"
+end
+
+target 'ChainedAnimation_Tests', :exclusive => true do
+  pod "ChainedAnimation", :path => "../"
+
+  
+end
