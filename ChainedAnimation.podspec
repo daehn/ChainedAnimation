@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name             = "ChainedAnimation"
   s.version          = "0.1.0"
   s.summary          = "ChainedAnimation is a small library to chain multiple animations with different delays."
-  s.homepage         = "https://github.com/daehn/Chain"
+  s.homepage         = "https://github.com/daehn/ChainedAnimation"
   s.license          = 'MIT'
   s.author           = { "Silvan Dähn" => "silvandaehn@me.com" }
   s.source           = { :git => "https://github.com/daehn/Chain.git", :tag => s.version.to_s }
