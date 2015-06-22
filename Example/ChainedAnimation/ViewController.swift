@@ -10,10 +10,11 @@ import UIKit
 import ChainedAnimation
 
 extension UIView {
-    func outline(color: UIColor = .blackColor(), borderWidth: CGFloat = 1) {
+    func outline(color: UIColor = .blackColor(), borderWidth: CGFloat = 1, cornerRadius: CGFloat = 0) {
         backgroundColor = .clearColor()
         layer.borderColor = color.CGColor
         layer.borderWidth = borderWidth
+        layer.cornerRadius = cornerRadius
     }
 }
 
@@ -49,8 +50,7 @@ class ViewController: UIViewController {
 
     func layoutPhoneAndDisplay() {
         phone.frame = CGRectInset(view.bounds, 60, 60)
-        phone.outline()
-        phone.layer.cornerRadius = 40
+        phone.outline(cornerRadius: 40)
         phone.y = view.height
 
         displayImageView.frame = CGRectInset(phone.bounds, 10, 60)
@@ -86,6 +86,7 @@ class ViewController: UIViewController {
         subheader.center = view.center
         subheader.y = 0
         subheader.alpha = 0
+        subheader.transform = CGAffineTransformIdentity
         view.addSubview(subheader)
     }
 
@@ -97,36 +98,52 @@ class ViewController: UIViewController {
         headline.center = view.center
         headline.y = 0
         headline.alpha = 0
+        headline.transform = CGAffineTransformIdentity
         view.addSubview(headline)
     }
 
     // MARK: - Animation
 
     func startAnimation() {
-        UIView.beginAnimationChain(0.6, options: .CurveEaseInOut) {
-            self.phone.y = 170
+        let moveAndScaleSection: UIView -> () = { section in
+            section.alpha = 1
+            section.y -= self.sectionOffset
+            section.transform = CGAffineTransformIdentity
+        }
+
+        let translation = CGAffineTransformMakeTranslation(-200, -450)
+        let rotation = CGAffineTransformMakeRotation(CGFloat(M_PI_4 * -1))
+        let transform = CGAffineTransformConcat(translation, rotation)
+
+        UIView.beginAnimationChain(0.8, options: .CurveEaseInOut) {
+                self.phone.y = 170
             }.thenAfter(0.1) {
                 self.subheader.y = 105
-                self.firstSection.alpha = 1
-                self.firstSection.y -= self.sectionOffset
-                self.firstSection.transform = CGAffineTransformIdentity
+                moveAndScaleSection(self.firstSection)
             }.thenAfter(0.15) {
-                self.secondSection.alpha = 1
-                self.secondSection.y -= self.sectionOffset
-                self.secondSection.transform = CGAffineTransformIdentity
+                moveAndScaleSection(self.secondSection)
                 self.subheader.alpha = 1
                 self.headline.y = 45
             }.thenAfter(0.1) {
-                self.thirdSection.alpha = 1
-                self.thirdSection.y -= self.sectionOffset
-                self.thirdSection.transform = CGAffineTransformIdentity
+                moveAndScaleSection(self.thirdSection)
                 self.headline.alpha = 1
             }.thenAfter(0.1) {
-                self.fourthSection.alpha = 1
-                self.fourthSection.y -= self.sectionOffset
-                self.fourthSection.transform = CGAffineTransformIdentity
+                moveAndScaleSection(self.fourthSection)
             }.completion { _ in
-                // Do something on completion
+                println("First completion")
+            }.startNewChain(1.2, options: .CurveEaseIn) {
+                self.displayImageView.alpha = 0
+            }.thenAfter(0.2) {
+                self.headline.alpha = 0
+                self.headline.transform = transform
+            }.thenAfter(0.1) {
+                self.subheader.alpha = 0
+                self.subheader.transform = transform
+            }.thenAfter(0.2) {
+                self.phone.alpha = 0
+                self.phone.transform = transform
+            }.completion { _ in
+                println("Second completion")
             }.animate()
     }
 }
