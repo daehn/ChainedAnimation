@@ -12,7 +12,25 @@ Chain multiple animations with different delays.
 
 <img src="chain-example-loop.gif" width="250">
 
-You can create a chained animation like this:
+You can create a chained animation with the `-beginAnimationChain` function on the UIView class.
+
+```swift
+UIView.beginAnimationChain(0.5) {
+  view.frame.origin.y = 170
+}.animate()
+```
+
+You can provide an optional delay an `UIViewAnimationOptions`.
+
+```swift
+UIView.beginAnimationChain(0.5, delay: 0.2, options: .CurveEaseInOut) {
+  view.frame.origin.y = 170
+}.animate()
+```
+To add an offset animation, use the `-thenAfter:` function and append an
+animation closure that will be executed after the provided offset. Add a completion 
+closure to the animation chain and it will be executed when the previous animation
+in the chain completed.
 
 ```swift
 UIView.beginAnimationChain(0.5, options: .CurveEaseInOut) {
