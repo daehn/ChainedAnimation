@@ -8,7 +8,7 @@
 
 // ChainedAnimation
 #define COCOAPODS_POD_AVAILABLE_ChainedAnimation
-#define COCOAPODS_VERSION_MAJOR_ChainedAnimation 0
-#define COCOAPODS_VERSION_MINOR_ChainedAnimation 1
+#define COCOAPODS_VERSION_MAJOR_ChainedAnimation 1
+#define COCOAPODS_VERSION_MINOR_ChainedAnimation 0
 #define COCOAPODS_VERSION_PATCH_ChainedAnimation 0
 

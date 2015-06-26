@@ -1,5 +1,5 @@
 PODS:
-  - ChainedAnimation (0.1.0)
+  - ChainedAnimation (1.0.0)
 
 DEPENDENCIES:
   - ChainedAnimation (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ChainedAnimation: 0906bd75dfd2faeb6a11abbe80a7243e53ccd3dc
+  ChainedAnimation: 467e3aaac0a0969a06cce4be652ecde6cbdd59fa
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2
