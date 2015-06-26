@@ -1,14 +1,15 @@
 # ChainedAnimation
 
-[![CI Status](http://img.shields.io/travis/daehn/ChainedAnimation.svg?style=flat)](https://travis-ci.org/daehn/ChainedAnimation) 
-![Version](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat) 
-![License](https://img.shields.io/cocoapods/l/ChainedAnimation.svg?style=flat) 
+[![CI Status](http://img.shields.io/travis/daehn/ChainedAnimation.svg?style=flat)](https://travis-ci.org/daehn/ChainedAnimation)
+![Version](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat)
+![License](https://img.shields.io/cocoapods/l/ChainedAnimation.svg?style=flat)
 ![Platform](https://img.shields.io/cocoapods/p/ChainedAnimation.svg?style=flat)
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.  
-Chain multiple animations with different delays.
+
+Chain multiple animations with different delays. Chained animations will be started with a delay after the last one started executing.
 
 <img src="chain-example-loop.gif" width="250">
 
@@ -27,20 +28,42 @@ UIView.beginAnimationChain(0.5, delay: 0.2, options: .CurveEaseInOut) {
   view.frame.origin.y = 170
 }.animate()
 ```
-To add an offset animation, use the `-thenAfter:` function and append an
-animation closure that will be executed after the provided offset. Add a completion 
-closure to the animation chain and it will be executed when the previous animation
-in the chain completed.
+To add an offset animation, use the `-thenAfterStart:` function and append an
+animation closure that will be executed as soon as the last animation started, delayed by the provided offset. Add a completion
+closure to the animation chain and it will be executed when the previous animation in the chain completed.
 
 ```swift
 UIView.beginAnimationChain(0.5, options: .CurveEaseInOut) {
   view.frame.origin.y = 170
-}.thenAfter(0.1) {
+}.thenAfterStart(0.1) {
+  // This animation will be started 0.1 seconds
+  // after the previous one started
   otherView.tranform = awesomeTransform
-}.thenAfter(0.15) {
+}.thenAfterStart(0.15) {
   // More shiny animations
 }.completion { bool in
-  // Do something nice on completion. Or don't.   
+  // Do something nice on completion. Or don't.
+}.animate()
+```
+
+It is also possible to add a new chain after a previous one completed.
+To add a new chain call `-chainAfterCompletion:` and start adding animation blocks with their offset.
+
+```swift
+UIView.beginAnimationChain(0.33, options: .CurveEaseInOut) {
+  view.frame.origin.y = 170
+}.thenAfterStart(0.15) {
+  // Start animations with a delayed start
+}.completion { bool in
+  // Do something nice on the completion of the first chain.
+}.chainAfterCompletion(1.2, options: .CurveEaseIn) {
+    // This animation will be started after the last
+    // animation in the first chain completed
+}.thenAfterStart(0.1) {
+    // This animation will be started 0.1 seconds after
+    // the first animation in the second chain started
+}.completion { _ in
+    // Do something nice on the completion of the second chain.
 }.animate()
 ```
 
