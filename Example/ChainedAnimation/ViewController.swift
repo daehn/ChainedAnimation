@@ -117,29 +117,29 @@ class ViewController: UIViewController {
 
         UIView.beginAnimationChain(0.8, options: .CurveEaseInOut) {
                 self.phone.y = 170
-            }.thenAfter(0.1) {
+            }.thenAfterStart(0.1) {
                 self.subheader.y = 105
                 moveAndScaleSection(self.firstSection)
-            }.thenAfter(0.15) {
+            }.thenAfterStart(0.15) {
                 moveAndScaleSection(self.secondSection)
                 self.subheader.alpha = 1
                 self.headline.y = 45
-            }.thenAfter(0.1) {
+            }.thenAfterStart(0.1) {
                 moveAndScaleSection(self.thirdSection)
                 self.headline.alpha = 1
-            }.thenAfter(0.1) {
+            }.thenAfterStart(0.1) {
                 moveAndScaleSection(self.fourthSection)
             }.completion { _ in
                 println("First completion")
-            }.startNewChain(1.2, options: .CurveEaseIn) {
+            }.chainAfterCompletion(1.2, options: .CurveEaseIn) {
                 self.displayImageView.alpha = 0
-            }.thenAfter(0.2) {
+            }.thenAfterStart(0.2) {
                 self.headline.alpha = 0
                 self.headline.transform = transform
-            }.thenAfter(0.1) {
+            }.thenAfterStart(0.1) {
                 self.subheader.alpha = 0
                 self.subheader.transform = transform
-            }.thenAfter(0.2) {
+            }.thenAfterStart(0.2) {
                 self.phone.alpha = 0
                 self.phone.transform = transform
             }.completion { _ in

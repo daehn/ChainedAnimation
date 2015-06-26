@@ -54,7 +54,7 @@ public struct AnimationChain {
     :returns: A new `AnimationChain` including the added animation.
     */
 
-    public func thenAfter(offset: NSTimeInterval, animation: Animation) -> AnimationChain {
+    public func thenAfterStart(offset: NSTimeInterval, animation: Animation) -> AnimationChain {
         var previousAnimations = animations
         var previousChain = previousAnimations.removeLast()
         let previousDuration = previousChain.last?.duration ?? 0
@@ -73,7 +73,7 @@ public struct AnimationChain {
     :return: A new `AnimationChain` with the added completion closure.
     **/
 
-    public  func completion(completion: Completion) -> AnimationChain {
+    public func completion(completion: Completion) -> AnimationChain {
         var previousAnimations = animations
         var lastChain = previousAnimations.removeLast()
         var lastAnimation = lastChain.removeLast()
@@ -83,7 +83,7 @@ public struct AnimationChain {
         return AnimationChain(options: options, animations: previousAnimations)
     }
 
-    public func startNewChain(duration: NSTimeInterval,
+    public func chainAfterCompletion(duration: NSTimeInterval,
         delay: NSTimeInterval = 0,
         options: UIViewAnimationOptions = nil,
         animations newAnimations: Animation) -> AnimationChain {

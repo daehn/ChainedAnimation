@@ -24,7 +24,7 @@ class ChainedAnimationTests: XCTestCase {
     func testThenAfterCalled() {
         let expectation = self.expectationWithDescription("second animation should execute 0.1 seconds after the first")
         UIView.beginAnimationChain(0.2, delay: 0) {
-            }.thenAfter(0.2) {
+            }.thenAfterStart(0.2) {
                 expectation.fulfill()
             }.animate()
 
@@ -32,41 +32,45 @@ class ChainedAnimationTests: XCTestCase {
     }
 
     func testComplexChaining() {
-        let animationExpectation = self.expectationWithDescription("animation closure should be called")
-        let thenAfterExpectation = self.expectationWithDescription("second animation closure should be called")
-        let completionExpectation = self.expectationWithDescription("completion closure should be called")
+        let completionExpectation = self.expectationWithDescription("Animation, offset animation and completion should be called")
+        var (animation, offset) = (false, false)
 
-        UIView.beginAnimationChain(0.3, delay: 0) {
-                animationExpectation.fulfill()
-            }.thenAfter(0.2) {
-                thenAfterExpectation.fulfill()
+        UIView.beginAnimationChain(0.1, delay: 0) {
+            animation = true
+            }.thenAfterStart(0.1) {
+                offset = true
             }.completion { _ in
-                completionExpectation.fulfill()
+                if animation && offset {
+                    completionExpectation.fulfill()
+                } else {
+                    XCTFail("First or offset animation have not been called")
+                }
             }.animate()
 
-        self.waitForExpectationsWithTimeout(0.3, handler: nil)
+        self.waitForExpectationsWithTimeout(0.1, handler: nil)
+
     }
 
     func testMultipleChainings() {
-        let animationExpectation = self.expectationWithDescription("animation closure should be called")
-        let secondChainExpectation = self.expectationWithDescription("second animation closure should be called")
-        let firstCompletionExpectation = self.expectationWithDescription("first completion closure should be called")
-        let secondCompletionExpectation = self.expectationWithDescription("second completion closure should be called")
+        let expectation = self.expectationWithDescription("All closures should be executed")
+        var (animation, firstCompletion, secondAnimation) = (false, false, false)
 
-        UIView.beginAnimationChain(0.1, delay: 0) {
-                animationExpectation.fulfill()
+        UIView.beginAnimationChain(0, delay: 0) {
+                animation = true
             }.completion { bool in
-                XCTAssertTrue(bool)
-                firstCompletionExpectation.fulfill()
-            }.startNewChain(0.2) {
-                secondChainExpectation.fulfill()
+                firstCompletion = true
+            }.chainAfterCompletion(0.1) {
+                secondAnimation = true
             }.completion { bool in
-                XCTAssertTrue(bool)
-                secondCompletionExpectation.fulfill()
+                if animation && firstCompletion && secondAnimation {
+                    expectation.fulfill()
+                } else {
+                    XCTFail("First or offset animation have not been called")
+                }
             }.animate()
 
-        self.waitForExpectationsWithTimeout(0.3, handler: nil)
+        self.waitForExpectationsWithTimeout(0.1, handler: nil)
     }
-
+    
     
 }
