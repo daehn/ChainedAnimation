@@ -1,76 +1,76 @@
 import UIKit
 import XCTest
-import ChainedAnimation
+@testable import ChainedAnimation
 
 class ChainedAnimationTests: XCTestCase {
 
-    func testAnimation() {
-        let expectation = self.expectationWithDescription("animation closure should be called")
-        UIView.beginAnimationChain(0.2) {
-            expectation.fulfill()
-            }.animate()
-        self.waitForExpectationsWithTimeout(0, handler: nil)
+    func testBoxedAnimation() {
+
+        let expectation = expectationWithDescription("animation closure should be called")
+        var animationCalled = false
+        let animation: Animation = { animationCalled = true  }
+        let completion: Completion = { bool in expectation.fulfill() }
+        let boxedAnimation = boxedTestAnimation(animation, completion: completion)
+        boxedAnimation.execute()
+
+        waitForExpectationsWithTimeout(1) { error in
+            XCTAssert(animationCalled)
+        }
+
+        XCTAssert(boxedAnimation.duration == 0.5)
+        XCTAssert(boxedAnimation.delay == 0.6)
+        XCTAssert(boxedAnimation.options == .CurveEaseIn)
     }
 
-    func testCompletion() {
-        let expectation = self.expectationWithDescription("completion closure should be called")
-        UIView.beginAnimationChain(0.2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut) {
-            }.completion { _ in
-                expectation.fulfill()
+    func testAnimationChain() {
+        let animationClosure: Animation = {}
+        let firstBoxedAnimation = boxedTestAnimation(animationClosure)
+        let firstChain = AnimationChain(options: [.CurveEaseIn, .Autoreverse], animations: [[firstBoxedAnimation]])
+        let secondChain = firstChain.thenAfterStart(1.0, animation: animationClosure)
+
+        XCTAssert(firstChain.currentOffset == 0)
+        XCTAssert(firstChain.animations.flatten().count == 1)
+        XCTAssert(secondChain.currentOffset == 1.0)
+        XCTAssert(secondChain.animations.flatten().count == 2)
+        XCTAssert(secondChain.options == firstChain.options)
+
+        let completionChain = secondChain.chainAfterCompletion(0.5, delay: 0, options: .CurveEaseInOut, animations: animationClosure)
+        XCTAssert(completionChain.animations.flatten().count == 3)
+        XCTAssert(completionChain.animations.count == 2)
+        XCTAssert(completionChain.currentOffset == 0)
+        XCTAssert(completionChain.options == .CurveEaseInOut)
+    }
+
+    func testAnimationCalled() {
+        UIView.beginAnimationChain(0) {
+            XCTAssert(true)
             }.animate()
-        self.waitForExpectationsWithTimeout(0.2, handler: nil)
+    }
+
+    func testCompletionCalled() {
+        UIView.beginAnimationChain(2, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut) {
+            }.completion { success in
+                XCTAssert(success)
+            }.animate()
     }
 
     func testThenAfterCalled() {
-        let expectation = self.expectationWithDescription("second animation should execute 0.1 seconds after the first")
         UIView.beginAnimationChain(0.2, delay: 0) {
             }.thenAfterStart(0.2) {
-                expectation.fulfill()
+                XCTAssert(true)
             }.animate()
-
-        self.waitForExpectationsWithTimeout(0.1, handler: nil)
     }
 
-    func testComplexChaining() {
-        let completionExpectation = self.expectationWithDescription("Animation, offset animation and completion should be called")
-        var (animation, offset) = (false, false)
+    // MARK: - Helper
 
-        UIView.beginAnimationChain(0.1, delay: 0) {
-            animation = true
-            }.thenAfterStart(0.1) {
-                offset = true
-            }.completion { _ in
-                if animation && offset {
-                    completionExpectation.fulfill()
-                } else {
-                    XCTFail("First or offset animation have not been called")
-                }
-            }.animate()
-
-        self.waitForExpectationsWithTimeout(0.1, handler: nil)
-
+    func boxedTestAnimation(animation: Animation, completion: Completion? = nil) -> BoxedAnimation {
+        return BoxedAnimation(
+            animation,
+            duration: 0.5,
+            delay: 0.6,
+            options: .CurveEaseIn,
+            completion: completion
+        )
     }
-
-    func testMultipleChainings() {
-        let expectation = self.expectationWithDescription("All closures should be executed")
-        var (animation, firstCompletion, secondAnimation) = (false, false, false)
-
-        UIView.beginAnimationChain(0, delay: 0) {
-                animation = true
-            }.completion { bool in
-                firstCompletion = true
-            }.chainAfterCompletion(0.1) {
-                secondAnimation = true
-            }.completion { bool in
-                if animation && firstCompletion && secondAnimation {
-                    expectation.fulfill()
-                } else {
-                    XCTFail("First or offset animation have not been called")
-                }
-            }.animate()
-
-        self.waitForExpectationsWithTimeout(0.1, handler: nil)
-    }
-    
     
 }
