@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F0C7094CDD95D0C1C5F9CE2"
+               BlueprintIdentifier = "57B12026C5B265A384EB984664EE49F1"
                BuildableName = "ChainedAnimation.framework"
-               BlueprintName = "Pods-ChainedAnimation_Tests-ChainedAnimation"
+               BlueprintName = "ChainedAnimation"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F0C7094CDD95D0C1C5F9CE2"
+            BlueprintIdentifier = "57B12026C5B265A384EB984664EE49F1"
             BuildableName = "ChainedAnimation.framework"
-            BlueprintName = "Pods-ChainedAnimation_Tests-ChainedAnimation"
+            BlueprintName = "ChainedAnimation"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

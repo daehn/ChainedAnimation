@@ -9,6 +9,15 @@
 import UIKit
 
 extension UIView {
+    func outline(color: UIColor = .blackColor(), borderWidth: CGFloat = 1, cornerRadius: CGFloat = 0) {
+        backgroundColor = .clearColor()
+        layer.borderColor = color.CGColor
+        layer.borderWidth = borderWidth
+        layer.cornerRadius = cornerRadius
+    }
+}
+
+extension UIView {
     var y: CGFloat {
         get {
             return self.frame.origin.y

@@ -9,15 +9,6 @@
 import UIKit
 import ChainedAnimation
 
-extension UIView {
-    func outline(color: UIColor = .blackColor(), borderWidth: CGFloat = 1, cornerRadius: CGFloat = 0) {
-        backgroundColor = .clearColor()
-        layer.borderColor = color.CGColor
-        layer.borderWidth = borderWidth
-        layer.cornerRadius = cornerRadius
-    }
-}
-
 class ViewController: UIViewController {
 
     var displayImageView = UIImageView()
@@ -54,7 +45,6 @@ class ViewController: UIViewController {
         phone.y = view.height
 
         displayImageView.frame = CGRectInset(phone.bounds, 10, 60)
-        displayImageView.image = UIImage(named: "screen")
         displayImageView.outline()
         displayImageView.backgroundColor = .groupTableViewBackgroundColor()
         phone.addSubview(displayImageView)
@@ -73,7 +63,6 @@ class ViewController: UIViewController {
             view.backgroundColor = .whiteColor()
             currentY += sectionHeight + sectionPadding
             view.alpha = 0
-            view.transform = CGAffineTransformMakeScale(0.8, 0.8)
             displayImageView.addSubview(view)
         }
     }
@@ -86,7 +75,6 @@ class ViewController: UIViewController {
         subheader.center = view.center
         subheader.y = 0
         subheader.alpha = 0
-        subheader.transform = CGAffineTransformIdentity
         view.addSubview(subheader)
     }
 
@@ -98,54 +86,43 @@ class ViewController: UIViewController {
         headline.center = view.center
         headline.y = 0
         headline.alpha = 0
-        headline.transform = CGAffineTransformIdentity
         view.addSubview(headline)
     }
 
     // MARK: - Animation
 
     func startAnimation() {
-        let moveAndScaleSection: UIView -> () = { section in
+        let moveAndFade: UIView -> Void = { section in
             section.alpha = 1
             section.y -= self.sectionOffset
-            section.transform = CGAffineTransformIdentity
         }
-
-        let translation = CGAffineTransformMakeTranslation(-200, -450)
-        let rotation = CGAffineTransformMakeRotation(CGFloat(M_PI_4 * -1))
-        let transform = CGAffineTransformConcat(translation, rotation)
 
         UIView.beginAnimationChain(0.8, options: .CurveEaseInOut) {
                 self.phone.y = 170
             }.thenAfterStart(0.1) {
                 self.subheader.y = 105
-                moveAndScaleSection(self.firstSection)
+                moveAndFade(self.firstSection)
             }.thenAfterStart(0.15) {
-                moveAndScaleSection(self.secondSection)
+                moveAndFade(self.secondSection)
                 self.subheader.alpha = 1
                 self.headline.y = 45
             }.thenAfterStart(0.1) {
-                moveAndScaleSection(self.thirdSection)
+                moveAndFade(self.thirdSection)
                 self.headline.alpha = 1
             }.thenAfterStart(0.1) {
-                moveAndScaleSection(self.fourthSection)
+                moveAndFade(self.fourthSection)
             }.completion { _ in
-                println("First completion")
-            }.chainAfterCompletion(1.2, options: .CurveEaseIn) {
+                print("First completion")
+        }.chainAfterCompletion(1.2, delay: 0.5, options: .CurveEaseIn) {
                 self.displayImageView.alpha = 0
+                self.phone.alpha = 0
             }.thenAfterStart(0.2) {
                 self.headline.alpha = 0
-                self.headline.transform = transform
             }.thenAfterStart(0.1) {
                 self.subheader.alpha = 0
-                self.subheader.transform = transform
-            }.thenAfterStart(0.2) {
-                self.phone.alpha = 0
-                self.phone.transform = transform
             }.completion { _ in
-                println("Second completion")
+                print("Second completion")
             }.animate()
     }
 }
-
 

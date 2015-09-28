@@ -9,16 +9,17 @@
 import UIKit
 
 public typealias Animation = () -> Void
-public typealias Completion = (Bool -> Void)?
+public typealias Completion = Bool -> Void
 
 struct BoxedAnimation {
     let animation: Animation
     let duration: NSTimeInterval
     let delay: NSTimeInterval
     let options: UIViewAnimationOptions
-    var completion : Completion
+    var completion : Completion?
 
-    init(_ animation: Animation, duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewAnimationOptions = nil, completion: Completion = nil) {
+    init(_ animation: Animation, duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewAnimationOptions = [], completion: Completion? = nil) {
+
         self.animation = animation
         self.duration = duration
         self.delay = delay
@@ -27,7 +28,13 @@ struct BoxedAnimation {
     }
 
     func execute() {
-        UIView.animateWithDuration(duration, delay: delay, options: options, animations: animation, completion: completion)
+        UIView.animateWithDuration(
+            duration,
+            delay: delay,
+            options: options,
+            animations: animation,
+            completion: completion
+        )
     }
 }
 
@@ -36,9 +43,7 @@ public struct AnimationChain {
     var animations: [[BoxedAnimation]]
     var currentOffset: NSTimeInterval
 
-    init(options: UIViewAnimationOptions,
-        animations: [[BoxedAnimation]],
-        currentOffset : NSTimeInterval = 0) {
+    init(options: UIViewAnimationOptions, animations: [[BoxedAnimation]], currentOffset : NSTimeInterval = 0) {
             self.options = options
             self.animations = animations
             self.currentOffset = currentOffset
@@ -55,10 +60,17 @@ public struct AnimationChain {
     */
 
     public func thenAfterStart(offset: NSTimeInterval, animation: Animation) -> AnimationChain {
+
         var previousAnimations = animations
-        var previousChain = previousAnimations.removeLast()
+        let previousChain = previousAnimations.removeLast()
         let previousDuration = previousChain.last?.duration ?? 0
-        var boxedFunction = BoxedAnimation(animation, duration: previousDuration, delay: self.currentOffset + offset, options: options)
+        let previousDelay = previousChain.last?.delay ?? 0
+        let boxedFunction = BoxedAnimation(
+            animation,
+            duration: previousDuration,
+            delay: self.currentOffset + offset + previousDelay,
+            options: options
+        )
         previousAnimations.append(previousChain + [boxedFunction])
         return AnimationChain(options: options, animations: previousAnimations, currentOffset: currentOffset + offset)
     }
@@ -74,19 +86,28 @@ public struct AnimationChain {
     **/
 
     public func completion(completion: Completion) -> AnimationChain {
+
         var previousAnimations = animations
         var lastChain = previousAnimations.removeLast()
-        var lastAnimation = lastChain.removeLast()
-        let boxedFunction = BoxedAnimation(lastAnimation.animation, duration: lastAnimation.duration, delay: lastAnimation.delay, completion: completion)
+        let lastAnimation = lastChain.removeLast()
+        let boxedFunction = BoxedAnimation(
+            lastAnimation.animation,
+            duration: lastAnimation.duration,
+            delay: lastAnimation.delay,
+            completion: completion
+        )
         let newChain = lastChain + [boxedFunction]
         previousAnimations.append(newChain)
         return AnimationChain(options: options, animations: previousAnimations)
     }
 
-    public func chainAfterCompletion(duration: NSTimeInterval,
+    public func chainAfterCompletion(
+        duration: NSTimeInterval,
         delay: NSTimeInterval = 0,
-        options: UIViewAnimationOptions = nil,
-        animations newAnimations: Animation) -> AnimationChain {
+        options: UIViewAnimationOptions = [],
+        animations newAnimations: Animation
+        ) -> AnimationChain {
+
             let boxedFunction = BoxedAnimation(newAnimations, duration: duration, delay: delay, options: options)
             let newChain = animations + [[boxedFunction]]
             return AnimationChain(options: options, animations: newChain)
@@ -94,11 +115,11 @@ public struct AnimationChain {
 
     // Starts the animation of all animations in the current chain.
     public func animate() {
-        var boxedAnimationsArray: [[BoxedAnimation]] = []
 
+        var boxedAnimationsArray: [[BoxedAnimation]] = []
         if animations.count > 1 {
             for var index = animations.count - 1; index >= 1; index-- {
-                var (current, previous) = (animations[index], animations[index - 1])
+                var (current, previous) = (animations[index], animations[index-1])
                 let lastBox = previous.removeLast()
                 let wrappedAnimations = wrapAnimationBoxes(current, inCompletionOfBoxedAnimation: lastBox)
                 previous.append(wrappedAnimations)
@@ -115,15 +136,15 @@ public struct AnimationChain {
         }
     }
 
-    private func wrapAnimationBoxes(var animationsToWrap: [BoxedAnimation], var inCompletionOfBoxedAnimation boxedAnimation: BoxedAnimation) -> BoxedAnimation {
+    private func wrapAnimationBoxes(
+        animationsToWrap: [BoxedAnimation],
+        var inCompletionOfBoxedAnimation boxedAnimation: BoxedAnimation
+        ) -> BoxedAnimation {
+
         let completion = boxedAnimation.completion
         let newCompletion: Completion = { bool in
-            if let completion = completion {
-                completion(bool)
-            }
-            for box in animationsToWrap {
-                box.execute()
-            }
+            completion?(bool)
+            animationsToWrap.forEach { $0.execute() }
         }
         boxedAnimation.completion = newCompletion
         return boxedAnimation
@@ -146,7 +167,13 @@ extension UIView {
     :return: A new `AnimationChain` with the added animation.
     **/
 
-    public class func beginAnimationChain(duration: NSTimeInterval, delay: NSTimeInterval = 0, options: UIViewAnimationOptions = nil, animations: Animation) -> AnimationChain {
+    public class func beginAnimationChain(
+        duration: NSTimeInterval,
+        delay: NSTimeInterval = 0,
+        options: UIViewAnimationOptions = [],
+        animations: Animation
+        ) -> AnimationChain {
+
         let boxedFunction = BoxedAnimation(animations, duration: duration, delay: delay, options: options)
         return AnimationChain(options: options, animations: [[boxedFunction]])
     }
