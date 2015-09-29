@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ChainedAnimation"
-  s.version          = "1.0.0"
+  s.version          = "2.0.0"
   s.summary          = "ChainedAnimation is a small library to chain multiple animations with different delays."
   s.homepage         = "https://github.com/daehn/ChainedAnimation"
   s.license          = 'MIT'

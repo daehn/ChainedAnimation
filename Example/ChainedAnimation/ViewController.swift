@@ -92,34 +92,39 @@ class ViewController: UIViewController {
     // MARK: - Animation
 
     func startAnimation() {
-        let moveAndFade: UIView -> Void = { section in
+        let moveAndFadeIn: UIView -> Void = { section in
             section.alpha = 1
             section.y -= self.sectionOffset
+        }
+
+        let moveAndFadeOut: UIView -> Void = { view in
+            view.alpha = 0
+            view.transform = CGAffineTransformMakeScale(0.98, 0.98)
         }
 
         UIView.beginAnimationChain(0.8, options: .CurveEaseInOut) {
                 self.phone.y = 170
             }.thenAfterStart(0.1) {
                 self.subheader.y = 105
-                moveAndFade(self.firstSection)
+                moveAndFadeIn(self.firstSection)
             }.thenAfterStart(0.15) {
-                moveAndFade(self.secondSection)
+                moveAndFadeIn(self.secondSection)
                 self.subheader.alpha = 1
                 self.headline.y = 45
             }.thenAfterStart(0.1) {
-                moveAndFade(self.thirdSection)
+                moveAndFadeIn(self.thirdSection)
                 self.headline.alpha = 1
             }.thenAfterStart(0.1) {
-                moveAndFade(self.fourthSection)
+                moveAndFadeIn(self.fourthSection)
             }.completion { _ in
                 print("First completion")
-        }.chainAfterCompletion(1.2, delay: 0.5, options: .CurveEaseIn) {
-                self.displayImageView.alpha = 0
-                self.phone.alpha = 0
+            }.chainAfterCompletion(1.2, delay: 0.5, options: .CurveEaseIn) {
+                moveAndFadeOut(self.displayImageView)
+                moveAndFadeOut(self.phone)
             }.thenAfterStart(0.2) {
-                self.headline.alpha = 0
+                moveAndFadeOut(self.headline)
             }.thenAfterStart(0.1) {
-                self.subheader.alpha = 0
+                moveAndFadeOut(self.subheader)
             }.completion { _ in
                 print("Second completion")
             }.animate()

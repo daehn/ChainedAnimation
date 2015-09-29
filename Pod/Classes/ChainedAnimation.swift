@@ -19,7 +19,6 @@ struct BoxedAnimation {
     var completion : Completion?
 
     init(_ animation: Animation, duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewAnimationOptions = [], completion: Completion? = nil) {
-
         self.animation = animation
         self.duration = duration
         self.delay = delay
@@ -44,9 +43,9 @@ public struct AnimationChain {
     var currentOffset: NSTimeInterval
 
     init(options: UIViewAnimationOptions, animations: [[BoxedAnimation]], currentOffset : NSTimeInterval = 0) {
-            self.options = options
-            self.animations = animations
-            self.currentOffset = currentOffset
+        self.options = options
+        self.animations = animations
+        self.currentOffset = currentOffset
     }
 
     /**
@@ -101,6 +100,20 @@ public struct AnimationChain {
         return AnimationChain(options: options, animations: previousAnimations)
     }
 
+    /**
+    Starts a new animation chain after the previous one completed.
+    This is useful if you want another set of sequential animations to start after a previous one.
+    Each chain can have an own completion closure.
+    The appended chain will start executing together with the completion closure of the previous one.
+
+    :param: duration The duration that will be used for all animations added to the `AnimationChain`.
+    :param: delay The delay before the execution of the first animation in the chain, default to 0.
+    :param: options The `UIViewAnimationOptions` that will be used for every animation in the chain, default is nil.
+    :param: animations The animations that should be executed first in the chain.
+
+    :return: A new `AnimationChain` with the new chain appended.
+    **/
+
     public func chainAfterCompletion(
         duration: NSTimeInterval,
         delay: NSTimeInterval = 0,
@@ -113,7 +126,11 @@ public struct AnimationChain {
             return AnimationChain(options: options, animations: newChain)
     }
 
-    // Starts the animation of all animations in the current chain.
+    /**
+    Starts the animation of all animations in the current chain.
+    Calls the completion closures added to individual chains after their completion.
+    **/
+
     public func animate() {
 
         var boxedAnimationsArray: [[BoxedAnimation]] = []
@@ -141,13 +158,13 @@ public struct AnimationChain {
         var inCompletionOfBoxedAnimation boxedAnimation: BoxedAnimation
         ) -> BoxedAnimation {
 
-        let completion = boxedAnimation.completion
-        let newCompletion: Completion = { bool in
-            completion?(bool)
-            animationsToWrap.forEach { $0.execute() }
-        }
-        boxedAnimation.completion = newCompletion
-        return boxedAnimation
+            let completion = boxedAnimation.completion
+            let newCompletion: Completion = { bool in
+                completion?(bool)
+                animationsToWrap.forEach { $0.execute() }
+            }
+            boxedAnimation.completion = newCompletion
+            return boxedAnimation
     }
 }
 
@@ -174,8 +191,8 @@ extension UIView {
         animations: Animation
         ) -> AnimationChain {
 
-        let boxedFunction = BoxedAnimation(animations, duration: duration, delay: delay, options: options)
-        return AnimationChain(options: options, animations: [[boxedFunction]])
+            let boxedFunction = BoxedAnimation(animations, duration: duration, delay: delay, options: options)
+            return AnimationChain(options: options, animations: [[boxedFunction]])
     }
 }
 
