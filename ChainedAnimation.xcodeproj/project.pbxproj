@@ -18,6 +18,14 @@
 		AF79A3C71D8438410060857F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C61D8438410060857F /* Animator.swift */; };
 		AF79A3C91D8438770060857F /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C81D8438770060857F /* AnimationConfiguration.swift */; };
 		AF79A3CB1D8438F60060857F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3CA1D8438F60060857F /* Types.swift */; };
+		AF79A3D31D843C0E0060857F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3D21D843C0E0060857F /* AppDelegate.swift */; };
+		AF79A3D51D843C0E0060857F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3D41D843C0E0060857F /* ViewController.swift */; };
+		AF79A3D81D843C0E0060857F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79A3D61D843C0E0060857F /* Main.storyboard */; };
+		AF79A3DA1D843C0E0060857F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF79A3D91D843C0E0060857F /* Assets.xcassets */; };
+		AF79A3DD1D843C0E0060857F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79A3DB1D843C0E0060857F /* LaunchScreen.storyboard */; };
+		AF79A3E31D843C450060857F /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3E21D843C450060857F /* UIView+Helper.swift */; };
+		AF79A3E41D843D2B0060857F /* ChainedAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A02461D84204900F89BD9 /* ChainedAnimation.framework */; };
+		AF79A3E51D843D2B0060857F /* ChainedAnimation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A02461D84204900F89BD9 /* ChainedAnimation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,28 @@
 			remoteGlobalIDString = AF6A02451D84204900F89BD9;
 			remoteInfo = ChainedAnimation;
 		};
+		AF79A3E61D843D2B0060857F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF6A023D1D84204900F89BD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6A02451D84204900F89BD9;
+			remoteInfo = ChainedAnimation;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF79A3E81D843D2B0060857F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF79A3E51D843D2B0060857F /* ChainedAnimation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF6A02461D84204900F89BD9 /* ChainedAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChainedAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +74,14 @@
 		AF79A3C61D8438410060857F /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		AF79A3C81D8438770060857F /* AnimationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
 		AF79A3CA1D8438F60060857F /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		AF79A3D01D843C0E0060857F /* ChainedAnimationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainedAnimationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF79A3D21D843C0E0060857F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF79A3D41D843C0E0060857F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF79A3D71D843C0E0060857F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF79A3D91D843C0E0060857F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF79A3DC1D843C0E0060857F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF79A3DE1D843C0E0060857F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF79A3E21D843C450060857F /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +100,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF79A3CD1D843C0E0060857F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF79A3E41D843D2B0060857F /* ChainedAnimation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +116,7 @@
 			children = (
 				AF6A02481D84204900F89BD9 /* ChainedAnimation */,
 				AF6A02531D84204900F89BD9 /* ChainedAnimationTests */,
+				AF79A3D11D843C0E0060857F /* ChainedAnimationExample */,
 				AF6A02471D84204900F89BD9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +126,7 @@
 			children = (
 				AF6A02461D84204900F89BD9 /* ChainedAnimation.framework */,
 				AF6A024F1D84204900F89BD9 /* ChainedAnimationTests.xctest */,
+				AF79A3D01D843C0E0060857F /* ChainedAnimationExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +155,20 @@
 				AF6A02561D84204900F89BD9 /* Info.plist */,
 			);
 			path = ChainedAnimationTests;
+			sourceTree = "<group>";
+		};
+		AF79A3D11D843C0E0060857F /* ChainedAnimationExample */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A3D21D843C0E0060857F /* AppDelegate.swift */,
+				AF79A3E21D843C450060857F /* UIView+Helper.swift */,
+				AF79A3D41D843C0E0060857F /* ViewController.swift */,
+				AF79A3D61D843C0E0060857F /* Main.storyboard */,
+				AF79A3D91D843C0E0060857F /* Assets.xcassets */,
+				AF79A3DB1D843C0E0060857F /* LaunchScreen.storyboard */,
+				AF79A3DE1D843C0E0060857F /* Info.plist */,
+			);
+			path = ChainedAnimationExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +221,25 @@
 			productReference = AF6A024F1D84204900F89BD9 /* ChainedAnimationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AF79A3CF1D843C0E0060857F /* ChainedAnimationExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF79A3E11D843C0E0060857F /* Build configuration list for PBXNativeTarget "ChainedAnimationExample" */;
+			buildPhases = (
+				AF79A3CC1D843C0E0060857F /* Sources */,
+				AF79A3CD1D843C0E0060857F /* Frameworks */,
+				AF79A3CE1D843C0E0060857F /* Resources */,
+				AF79A3E81D843D2B0060857F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF79A3E71D843D2B0060857F /* PBXTargetDependency */,
+			);
+			name = ChainedAnimationExample;
+			productName = ChainedAnimationExample;
+			productReference = AF79A3D01D843C0E0060857F /* ChainedAnimationExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +260,11 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
+					AF79A3CF1D843C0E0060857F = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AF6A02401D84204900F89BD9 /* Build configuration list for PBXProject "ChainedAnimation" */;
@@ -188,6 +273,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AF6A023C1D84204900F89BD9;
 			productRefGroup = AF6A02471D84204900F89BD9 /* Products */;
@@ -196,6 +282,7 @@
 			targets = (
 				AF6A02451D84204900F89BD9 /* ChainedAnimation */,
 				AF6A024E1D84204900F89BD9 /* ChainedAnimationTests */,
+				AF79A3CF1D843C0E0060857F /* ChainedAnimationExample */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +299,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF79A3CE1D843C0E0060857F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF79A3DD1D843C0E0060857F /* LaunchScreen.storyboard in Resources */,
+				AF79A3DA1D843C0E0060857F /* Assets.xcassets in Resources */,
+				AF79A3D81D843C0E0060857F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +338,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF79A3CC1D843C0E0060857F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF79A3D51D843C0E0060857F /* ViewController.swift in Sources */,
+				AF79A3E31D843C450060857F /* UIView+Helper.swift in Sources */,
+				AF79A3D31D843C0E0060857F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -249,7 +356,31 @@
 			target = AF6A02451D84204900F89BD9 /* ChainedAnimation */;
 			targetProxy = AF6A02511D84204900F89BD9 /* PBXContainerItemProxy */;
 		};
+		AF79A3E71D843D2B0060857F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF6A02451D84204900F89BD9 /* ChainedAnimation */;
+			targetProxy = AF79A3E61D843D2B0060857F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF79A3D61D843C0E0060857F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF79A3D71D843C0E0060857F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF79A3DB1D843C0E0060857F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF79A3DC1D843C0E0060857F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AF6A02581D84204900F89BD9 /* Debug */ = {
@@ -414,6 +545,32 @@
 			};
 			name = Release;
 		};
+		AF79A3DF1D843C0E0060857F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChainedAnimationExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silvandaehn.ChainedAnimationExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF79A3E01D843C0E0060857F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChainedAnimationExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silvandaehn.ChainedAnimationExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,6 +600,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AF79A3E11D843C0E0060857F /* Build configuration list for PBXNativeTarget "ChainedAnimationExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF79A3DF1D843C0E0060857F /* Debug */,
+				AF79A3E01D843C0E0060857F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
