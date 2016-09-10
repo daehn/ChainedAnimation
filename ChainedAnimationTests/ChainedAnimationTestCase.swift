@@ -12,17 +12,17 @@ import XCTest
 
 
 class ChainedAnimationTestCase: XCTestCase {
-    
+
     var animationProvider: MockAnimationProvider!
-    
+
     override func setUp() {
         super.setUp()
         animationProvider = MockAnimationProvider()
         Animator.animationProvider = animationProvider
     }
-    
+
     // MARK: - Helper
-    
+
     func testConfiguration(_ animation: @escaping Animation, completion: Completion? = nil) -> AnimationConfiguration {
         return AnimationConfiguration(
             animation,
@@ -32,5 +32,5 @@ class ChainedAnimationTestCase: XCTestCase {
             completion: completion
         )
     }
-
+    
 }

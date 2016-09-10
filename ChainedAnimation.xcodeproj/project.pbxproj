@@ -10,10 +10,14 @@
 		AF6A02501D84204900F89BD9 /* ChainedAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6A02461D84204900F89BD9 /* ChainedAnimation.framework */; };
 		AF6A02551D84204900F89BD9 /* ChainedAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A02541D84204900F89BD9 /* ChainedAnimationTests.swift */; };
 		AF6A02571D84204900F89BD9 /* ChainedAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6A02491D84204900F89BD9 /* ChainedAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF6A02611D84205400F89BD9 /* ChainedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A02601D84205400F89BD9 /* ChainedAnimation.swift */; };
+		AF6A02611D84205400F89BD9 /* AnimationChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A02601D84205400F89BD9 /* AnimationChain.swift */; };
 		AF6A02631D84265700F89BD9 /* MockAnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6A02621D84265700F89BD9 /* MockAnimationProvider.swift */; };
 		AF79A3C11D8430C50060857F /* AnimationConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C01D8430C50060857F /* AnimationConfigurationTests.swift */; };
 		AF79A3C31D8431100060857F /* ChainedAnimationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C21D8431100060857F /* ChainedAnimationTestCase.swift */; };
+		AF79A3C51D8438090060857F /* AnimationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C41D8438090060857F /* AnimationProvider.swift */; };
+		AF79A3C71D8438410060857F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C61D8438410060857F /* Animator.swift */; };
+		AF79A3C91D8438770060857F /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3C81D8438770060857F /* AnimationConfiguration.swift */; };
+		AF79A3CB1D8438F60060857F /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A3CA1D8438F60060857F /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +37,14 @@
 		AF6A024F1D84204900F89BD9 /* ChainedAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainedAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6A02541D84204900F89BD9 /* ChainedAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedAnimationTests.swift; sourceTree = "<group>"; };
 		AF6A02561D84204900F89BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF6A02601D84205400F89BD9 /* ChainedAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainedAnimation.swift; sourceTree = "<group>"; };
+		AF6A02601D84205400F89BD9 /* AnimationChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationChain.swift; sourceTree = "<group>"; };
 		AF6A02621D84265700F89BD9 /* MockAnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAnimationProvider.swift; sourceTree = "<group>"; };
 		AF79A3C01D8430C50060857F /* AnimationConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfigurationTests.swift; sourceTree = "<group>"; };
 		AF79A3C21D8431100060857F /* ChainedAnimationTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainedAnimationTestCase.swift; sourceTree = "<group>"; };
+		AF79A3C41D8438090060857F /* AnimationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationProvider.swift; sourceTree = "<group>"; };
+		AF79A3C61D8438410060857F /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		AF79A3C81D8438770060857F /* AnimationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
+		AF79A3CA1D8438F60060857F /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				AF6A02491D84204900F89BD9 /* ChainedAnimation.h */,
-				AF6A02601D84205400F89BD9 /* ChainedAnimation.swift */,
+				AF6A02601D84205400F89BD9 /* AnimationChain.swift */,
+				AF79A3CA1D8438F60060857F /* Types.swift */,
+				AF79A3C81D8438770060857F /* AnimationConfiguration.swift */,
+				AF79A3C61D8438410060857F /* Animator.swift */,
+				AF79A3C41D8438090060857F /* AnimationProvider.swift */,
 				AF6A024A1D84204900F89BD9 /* Info.plist */,
 			);
 			path = ChainedAnimation;
@@ -210,7 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6A02611D84205400F89BD9 /* ChainedAnimation.swift in Sources */,
+				AF79A3C71D8438410060857F /* Animator.swift in Sources */,
+				AF6A02611D84205400F89BD9 /* AnimationChain.swift in Sources */,
+				AF79A3C51D8438090060857F /* AnimationProvider.swift in Sources */,
+				AF79A3CB1D8438F60060857F /* Types.swift in Sources */,
+				AF79A3C91D8438770060857F /* AnimationConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

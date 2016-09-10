@@ -18,21 +18,25 @@ typealias AnimationParameters = (
 )
 
 class TestAnimation {
+
     var callCount = 0
     var closure: Animation! = nil
     
     init() {
         closure = { self.callCount += 1 }
     }
+
 }
 
 class TestCompletion {
+
     var callCount = 0
     var closure: Completion! = nil
     
     init() {
         closure = { _ in self.callCount += 1 }
     }
+
 }
 
 class MockAnimationProvider: AnimationProvider {
