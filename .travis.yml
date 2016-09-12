@@ -1,7 +1,7 @@
 language: objective-c
-osx_image: xcode7
-install:
-    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+osx_image: xcode8
+
 script:
-    - set -o pipefail && xcodebuild test -workspace Example/ChainedAnimation.xcworkspace -scheme ChainedAnimation-Example -destination "OS=8.3,name=iPhone 6" -sdk "iphonesimulator9.0"  ONLY_ACTIVE_ARCH=NO | xcpretty -c
-    - pod lib lint --quick
+    - set -o pipefail && xcodebuild clean build test -scheme ChainedAnimation -destination "OS=10.0,name=iPhone 7" | xcpretty
+after_script:
+    - bash <(curl -s https://codecov.io/bash)

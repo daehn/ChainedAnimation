@@ -1,6 +1,0 @@
-framework module ChainedAnimation {
-  umbrella header "ChainedAnimation-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,9 +1,6 @@
 # ChainedAnimation
 
-[![Build Status](https://travis-ci.org/daehn/ChainedAnimation.svg?branch=master)](https://travis-ci.org/daehn/ChainedAnimation)
-![Version](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat)
-![License](https://img.shields.io/cocoapods/l/ChainedAnimation.svg?style=flat)
-![Platform](https://img.shields.io/cocoapods/p/ChainedAnimation.svg?style=flat)
+[![Build Status](https://travis-ci.org/daehn/ChainedAnimation.svg?branch=develop)](https://travis-ci.org/daehn/ChainedAnimation) ![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat) [![codecov](https://codecov.io/gh/daehn/ChainedAnimation/branch/develop/graph/badge.svg)](https://codecov.io/gh/daehn/ChainedAnimation) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Usage
 
