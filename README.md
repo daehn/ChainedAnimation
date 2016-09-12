@@ -4,7 +4,7 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.  
+To run the example project, clone the repo, and run the Example application target.  
 
 Chain multiple animations with different delays. Chained animations will be started with a delay after the last one started executing.
 
@@ -62,15 +62,6 @@ UIView.beginAnimationChain(0.33, options: .CurveEaseInOut) {
 }.completion { _ in
     // Do something nice on the completion of the second chain.
 }.animate()
-```
-
-## Installation
-
-ChainedAnimation is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "ChainedAnimation"
 ```
 
 ## Author
