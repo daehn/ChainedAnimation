@@ -60,7 +60,7 @@ class AnimationConfigurationTests: ChainedAnimationTestCase {
 
         // When
         let secondCompletion = TestCompletion()
-        sut.add(Completion: secondCompletion.closure)
+        sut.add(completion: secondCompletion.closure)
 
         Animator.perform(configuration: sut)
 
@@ -80,8 +80,8 @@ class AnimationConfigurationTests: ChainedAnimationTestCase {
         // When
         let secondCompletion = TestCompletion()
         let thirdCompletion = TestCompletion()
-        sut.add(Completion: secondCompletion.closure)
-        sut.add(Completion: thirdCompletion.closure)
+        sut.add(completion: secondCompletion.closure)
+        sut.add(completion: thirdCompletion.closure)
 
         Animator.perform(configuration: sut)
 

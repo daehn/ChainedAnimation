@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     }
 
     func layoutSubheader() {
-        subheader.text = "This is an awesome application."
+        subheader.text = "This is an example application."
         subheader.font = UIFont(name: "Avenir Next", size: 18)
         subheader.textColor = .black
         subheader.sizeToFit()

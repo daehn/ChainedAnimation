@@ -23,7 +23,7 @@ struct AnimationConfiguration {
         self.completion = completion
     }
 
-    mutating func add(Completion completion: @escaping Completion) {
+    mutating func add(completion: @escaping Completion) {
         let currentCompletion = self.completion
         self.completion = {
             currentCompletion?($0)
