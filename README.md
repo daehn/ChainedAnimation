@@ -1,6 +1,6 @@
 # ChainedAnimation
 
-[![Build Status](https://travis-ci.org/daehn/ChainedAnimation.svg?branch=develop)](https://travis-ci.org/daehn/ChainedAnimation) ![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat) [![codecov](https://codecov.io/gh/daehn/ChainedAnimation/branch/develop/graph/badge.svg)](https://codecov.io/gh/daehn/ChainedAnimation) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat)](https://cocoapods.org/pods/ChainedAnimation)
+[![Build Status](https://travis-ci.org/daehn/ChainedAnimation.svg?branch=develop)](https://travis-ci.org/daehn/ChainedAnimation) ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat) [![codecov](https://codecov.io/gh/daehn/ChainedAnimation/branch/develop/graph/badge.svg)](https://codecov.io/gh/daehn/ChainedAnimation) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/ChainedAnimation.svg?style=flat)](https://cocoapods.org/pods/ChainedAnimation)
 
 ## Usage
 
