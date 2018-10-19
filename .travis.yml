@@ -2,6 +2,6 @@ language: objective-c
 osx_image: xcode10
 
 script:
-    - set -o pipefail && xcodebuild clean build test -scheme ChainedAnimation -destination "OS=11.0,name=iPhone 8" | xcpretty
+    - set -o pipefail && xcodebuild clean build test -scheme ChainedAnimation -destination "OS=12.0,name=iPhone XS" | xcpretty
 after_script:
     - bash <(curl -s https://codecov.io/bash)
