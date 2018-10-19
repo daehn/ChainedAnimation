@@ -38,7 +38,7 @@ class ChainedAnimationTests: ChainedAnimationTestCase {
     }
 
     func testCompletionCalled() {
-        UIView.beginAnimationChain(2, delay: 0, options: UIViewAnimationOptions.curveEaseInOut) {
+        UIView.beginAnimationChain(2, delay: 0, options: UIView.AnimationOptions.curveEaseInOut) {
             }.completion { success in
                 XCTAssert(success)
             }.animate()

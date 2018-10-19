@@ -8,11 +8,11 @@
 
 public struct AnimationChain {
 
-    let options: UIViewAnimationOptions
+    let options: UIView.AnimationOptions
     var animations: [[AnimationConfiguration]]
     var currentOffset: TimeInterval
 
-    init(options: UIViewAnimationOptions, animations: [[AnimationConfiguration]], currentOffset : TimeInterval = 0) {
+    init(options: UIView.AnimationOptions, animations: [[AnimationConfiguration]], currentOffset : TimeInterval = 0) {
         self.options = options
         self.animations = animations
         self.currentOffset = currentOffset
@@ -84,7 +84,7 @@ public struct AnimationChain {
     public func chainAfterCompletion(
         _ duration: TimeInterval,
         delay: TimeInterval = 0,
-        options: UIViewAnimationOptions = [],
+        options: UIView.AnimationOptions = [],
         animations newAnimations: @escaping Animation
         ) -> AnimationChain {
 
@@ -145,7 +145,7 @@ extension UIView {
     public class func beginAnimationChain(
         _ duration: TimeInterval,
         delay: TimeInterval = 0,
-        options: UIViewAnimationOptions = [],
+        options: UIView.AnimationOptions = [],
         animations: @escaping Animation
         ) -> AnimationChain {
 

@@ -12,10 +12,10 @@ struct AnimationConfiguration {
     let animation: Animation
     let duration: TimeInterval
     let delay: TimeInterval
-    let options: UIViewAnimationOptions
+    let options: UIView.AnimationOptions
     var completion : Completion?
 
-    init(_ animation: @escaping Animation, duration: TimeInterval, delay: TimeInterval, options: UIViewAnimationOptions = [], completion: Completion? = nil) {
+    init(_ animation: @escaping Animation, duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions = [], completion: Completion? = nil) {
         self.animation = animation
         self.duration = duration
         self.delay = delay

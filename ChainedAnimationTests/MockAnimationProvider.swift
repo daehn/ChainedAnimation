@@ -12,7 +12,7 @@ import ChainedAnimation
 typealias AnimationParameters = (
     duration: TimeInterval,
     delay: TimeInterval,
-    options: UIViewAnimationOptions,
+    options: UIView.AnimationOptions,
     animations: Animation,
     completion: Completion?
 )
@@ -47,7 +47,7 @@ class MockAnimationProvider: AnimationProvider {
     
     var callPassedInClosures = false
     
-    public func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIViewAnimationOptions, animations: @escaping Animation, completion: Completion?) {
+    public func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: @escaping Animation, completion: Completion?) {
         callCount += 1
         let parameters = (duration: duration, delay: delay, options: options, animations: animations, completion: completion)
         callParameters = parameters

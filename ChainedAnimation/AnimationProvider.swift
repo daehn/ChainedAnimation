@@ -9,14 +9,14 @@
 
 public protocol AnimationProvider {
 
-    func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIViewAnimationOptions, animations: @escaping Animation, completion: Completion?)
+    func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: @escaping Animation, completion: Completion?)
 
 }
 
 
 struct UIViewAnimationProvider: AnimationProvider {
 
-    func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIViewAnimationOptions, animations: @escaping Animation, completion: Completion?) {
+    func animate(withDuration duration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: @escaping Animation, completion: Completion?) {
         UIView.animate(
             withDuration: duration,
             delay: delay,
